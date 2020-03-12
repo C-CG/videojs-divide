@@ -1,8 +1,11 @@
 import videojs from 'video.js';
-import {version as VERSION} from '../package.json';
+import document from 'global/document';
+import { version as VERSION } from '../package.json';
 
 // Default options for the plugin.
-const defaults = {};
+const defaults = {
+  segments: undefined
+};
 
 // Cross-compatibility for Video.js 5 and 6.
 const registerPlugin = videojs.registerPlugin || videojs.plugin;
@@ -22,8 +25,29 @@ const registerPlugin = videojs.registerPlugin || videojs.plugin;
  * @param    {Object} [options={}]
  *           A plain object containing options for the plugin.
  */
+const setupProgressBar = (player, options) => {
+  const videoElement = player.el();
+  const ul = document.createElement('ul');
+
+  ul.id = 'segments';
+  // Looping segments
+  for (let i = 0; i < options.segments.length; i++) {
+    const li = document.createElement('li');
+
+    ul.appendChild(li);
+    li.innerHTML = i;
+  }
+  videoElement.appendChild(ul);
+};
+
 const onPlayerReady = (player, options) => {
   player.addClass('vjs-divide');
+
+  // If there are no segments, exit
+  if (!options.segments) {
+    return;
+  }
+  setupProgressBar(player, options);
 };
 
 /**

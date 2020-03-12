@@ -1,15 +1,18 @@
 /*! @name videojs-divide @version 0.0.0 @license MIT */
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('video.js')) :
-  typeof define === 'function' && define.amd ? define(['video.js'], factory) :
-  (global = global || self, global.videojsDivide = factory(global.videojs));
-}(this, function (videojs) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('video.js'), require('global/document')) :
+  typeof define === 'function' && define.amd ? define(['video.js', 'global/document'], factory) :
+  (global = global || self, global.videojsDivide = factory(global.videojs, global.document));
+}(this, function (videojs, document) { 'use strict';
 
   videojs = videojs && videojs.hasOwnProperty('default') ? videojs['default'] : videojs;
+  document = document && document.hasOwnProperty('default') ? document['default'] : document;
 
   var version = "0.0.0";
 
-  var defaults = {}; // Cross-compatibility for Video.js 5 and 6.
+  var defaults = {
+    segments: undefined
+  }; // Cross-compatibility for Video.js 5 and 6.
 
   var registerPlugin = videojs.registerPlugin || videojs.plugin; // const dom = videojs.dom || videojs;
 
@@ -28,8 +31,28 @@
    *           A plain object containing options for the plugin.
    */
 
+  var setupProgressBar = function setupProgressBar(player, options) {
+    var videoElement = player.el();
+    var ul = document.createElement('ul');
+    ul.id = 'segments'; // Looping segments
+
+    for (var i = 0; i < options.segments.length; i++) {
+      var li = document.createElement('li');
+      ul.appendChild(li);
+      li.innerHTML = i;
+    }
+
+    videoElement.appendChild(ul);
+  };
+
   var onPlayerReady = function onPlayerReady(player, options) {
-    player.addClass('vjs-divide');
+    player.addClass('vjs-divide'); // If there are no segments, exit
+
+    if (!options.segments) {
+      return;
+    }
+
+    setupProgressBar(player, options);
   };
   /**
    * A video.js plugin.
