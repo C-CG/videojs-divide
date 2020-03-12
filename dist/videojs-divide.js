@@ -11,7 +11,7 @@
   var version = "0.0.0";
 
   var defaults = {
-    segments: undefined
+    segments: []
   }; // Cross-compatibility for Video.js 5 and 6.
 
   var registerPlugin = videojs.registerPlugin || videojs.plugin; // const dom = videojs.dom || videojs;
@@ -31,28 +31,30 @@
    *           A plain object containing options for the plugin.
    */
 
-  var setupProgressBar = function setupProgressBar(player, options) {
+  var testRender = function testRender(player, options) {
     var videoElement = player.el();
     var ul = document.createElement('ul');
-    ul.id = 'segments'; // Looping segments
+    ul.id = 'segments';
+    ul.className = 'vjs-list'; // Looping segments
 
-    for (var i = 0; i < options.segments.length; i++) {
+    for (var i = 0; i < options.divides.length; i++) {
       var li = document.createElement('li');
+      li.className = 'vjs-list-item';
       ul.appendChild(li);
-      li.innerHTML = i;
+      li.innerHTML = 'startTime: ' + options.divides[i].startTime;
     }
 
     videoElement.appendChild(ul);
   };
 
   var onPlayerReady = function onPlayerReady(player, options) {
-    player.addClass('vjs-divide'); // If there are no segments, exit
+    player.addClass('vjs-divide');
+    testRender(player, options); // If there are no segments, exit
 
     if (!options.segments) {
       return;
-    }
+    } // setupProgressBar(player, options);
 
-    setupProgressBar(player, options);
   };
   /**
    * A video.js plugin.

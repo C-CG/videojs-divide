@@ -38,3 +38,18 @@
     }
   }
 }
+
+.vjs-list {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  list-style: none;
+}
+
+.vjs-list-item {
+  padding: 5px;
+  margin-bottom: 5px;
+  background: white;
+}
