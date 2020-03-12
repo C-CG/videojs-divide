@@ -11,7 +11,7 @@
   var version = "0.0.0";
 
   var defaults = {
-    segments: []
+    divides: []
   }; // Cross-compatibility for Video.js 5 and 6.
 
   var registerPlugin = videojs.registerPlugin || videojs.plugin; // const dom = videojs.dom || videojs;
@@ -31,17 +31,26 @@
    *           A plain object containing options for the plugin.
    */
 
-  var testRender = function testRender(player, options) {
+  var renderDivides = function renderDivides(player, options) {
     var videoElement = player.el();
     var ul = document.createElement('ul');
-    ul.id = 'segments';
-    ul.className = 'vjs-list'; // Looping segments
+    ul.id = 'divides';
+    ul.className = 'vjs-list'; // Looping divides
 
-    for (var i = 0; i < options.divides.length; i++) {
+    var _loop = function _loop(i) {
       var li = document.createElement('li');
       li.className = 'vjs-list-item';
-      ul.appendChild(li);
       li.innerHTML = 'startTime: ' + options.divides[i].startTime;
+
+      li.onclick = function () {
+        setTimeout(player.currentTime(options.divides[i].startTime));
+      };
+
+      ul.appendChild(li);
+    };
+
+    for (var i = 0; i < options.divides.length; i++) {
+      _loop(i);
     }
 
     videoElement.appendChild(ul);
@@ -49,12 +58,7 @@
 
   var onPlayerReady = function onPlayerReady(player, options) {
     player.addClass('vjs-divide');
-    testRender(player, options); // If there are no segments, exit
-
-    if (!options.segments) {
-      return;
-    } // setupProgressBar(player, options);
-
+    renderDivides(player, options);
   };
   /**
    * A video.js plugin.

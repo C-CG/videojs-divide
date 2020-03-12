@@ -4,7 +4,7 @@ import { version as VERSION } from '../package.json';
 
 // Default options for the plugin.
 const defaults = {
-  segments: []
+  divides: []
 };
 
 // Cross-compatibility for Video.js 5 and 6.
@@ -26,31 +26,29 @@ const registerPlugin = videojs.registerPlugin || videojs.plugin;
  *           A plain object containing options for the plugin.
  */
 
-const testRender = (player, options) => {
+const renderDivides = (player, options) => {
   const videoElement = player.el();
   const ul = document.createElement('ul');
 
-  ul.id = 'segments';
+  ul.id = 'divides';
   ul.className = 'vjs-list';
-  // Looping segments
+  // Looping divides
   for (let i = 0; i < options.divides.length; i++) {
     const li = document.createElement('li');
 
     li.className = 'vjs-list-item';
-    ul.appendChild(li);
     li.innerHTML = 'startTime: ' + options.divides[i].startTime;
+    li.onclick = function() {
+      setTimeout(player.currentTime(options.divides[i].startTime));
+    };
+    ul.appendChild(li);
   }
   videoElement.appendChild(ul);
 };
 
 const onPlayerReady = (player, options) => {
   player.addClass('vjs-divide');
-  testRender(player, options);
-  // If there are no segments, exit
-  if (!options.segments) {
-    return;
-  }
-  // setupProgressBar(player, options);
+  renderDivides(player, options);
 };
 
 /**

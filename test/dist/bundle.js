@@ -32,7 +32,7 @@
 
 	var cov_5yfkrdepa = function () {
 	  var path = '/Users/calvingill/Documents/videojs-plugin/videojs-divide/src/plugin.js',
-	      hash = 'c923f628187c456d25f3b03052ad7a55cc95bce5',
+	      hash = '1c708951fdc7a7e4a998d755b1792ee1d95aa2f7',
 	      Function = function () {}.constructor,
 	      global = new Function('return this')(),
 	      gcv = '__coverage__',
@@ -62,10 +62,10 @@
 	      '2': {
 	        start: {
 	          line: 29,
-	          column: 19
+	          column: 22
 	        },
 	        end: {
-	          line: 44,
+	          line: 47,
 	          column: 1
 	        }
 	      },
@@ -96,7 +96,7 @@
 	        },
 	        end: {
 	          line: 33,
-	          column: 21
+	          column: 20
 	        }
 	      },
 	      '6': {
@@ -115,7 +115,7 @@
 	          column: 2
 	        },
 	        end: {
-	          line: 42,
+	          line: 45,
 	          column: 3
 	        }
 	      },
@@ -146,7 +146,7 @@
 	        },
 	        end: {
 	          line: 40,
-	          column: 23
+	          column: 64
 	        }
 	      },
 	      '11': {
@@ -155,48 +155,48 @@
 	          column: 4
 	        },
 	        end: {
-	          line: 41,
-	          column: 64
+	          line: 43,
+	          column: 6
 	        }
 	      },
 	      '12': {
 	        start: {
-	          line: 43,
-	          column: 2
+	          line: 42,
+	          column: 6
 	        },
 	        end: {
-	          line: 43,
-	          column: 31
+	          line: 42,
+	          column: 67
 	        }
 	      },
 	      '13': {
 	        start: {
-	          line: 46,
-	          column: 22
+	          line: 44,
+	          column: 4
 	        },
 	        end: {
-	          line: 54,
-	          column: 1
+	          line: 44,
+	          column: 23
 	        }
 	      },
 	      '14': {
 	        start: {
-	          line: 47,
+	          line: 46,
 	          column: 2
 	        },
 	        end: {
-	          line: 47,
-	          column: 32
+	          line: 46,
+	          column: 31
 	        }
 	      },
 	      '15': {
 	        start: {
-	          line: 48,
-	          column: 2
+	          line: 49,
+	          column: 22
 	        },
 	        end: {
-	          line: 48,
-	          column: 30
+	          line: 52,
+	          column: 1
 	        }
 	      },
 	      '16': {
@@ -205,67 +205,67 @@
 	          column: 2
 	        },
 	        end: {
-	          line: 52,
-	          column: 3
+	          line: 50,
+	          column: 32
 	        }
 	      },
 	      '17': {
 	        start: {
 	          line: 51,
-	          column: 4
+	          column: 2
 	        },
 	        end: {
 	          line: 51,
-	          column: 11
+	          column: 33
 	        }
 	      },
 	      '18': {
 	        start: {
-	          line: 68,
+	          line: 66,
 	          column: 15
 	        },
 	        end: {
-	          line: 72,
+	          line: 70,
 	          column: 1
 	        }
 	      },
 	      '19': {
 	        start: {
-	          line: 69,
+	          line: 67,
 	          column: 2
 	        },
 	        end: {
-	          line: 71,
+	          line: 69,
 	          column: 5
 	        }
 	      },
 	      '20': {
 	        start: {
-	          line: 70,
+	          line: 68,
 	          column: 4
 	        },
 	        end: {
-	          line: 70,
+	          line: 68,
 	          column: 65
 	        }
 	      },
 	      '21': {
 	        start: {
-	          line: 75,
+	          line: 73,
 	          column: 0
 	        },
 	        end: {
-	          line: 75,
+	          line: 73,
 	          column: 33
 	        }
 	      },
 	      '22': {
 	        start: {
-	          line: 78,
+	          line: 76,
 	          column: 0
 	        },
 	        end: {
-	          line: 78,
+	          line: 76,
 	          column: 25
 	        }
 	      }
@@ -276,20 +276,20 @@
 	        decl: {
 	          start: {
 	            line: 29,
-	            column: 19
+	            column: 22
 	          },
 	          end: {
 	            line: 29,
-	            column: 20
+	            column: 23
 	          }
 	        },
 	        loc: {
 	          start: {
 	            line: 29,
-	            column: 40
+	            column: 43
 	          },
 	          end: {
-	            line: 44,
+	            line: 47,
 	            column: 1
 	          }
 	        },
@@ -299,73 +299,97 @@
 	        name: '(anonymous_1)',
 	        decl: {
 	          start: {
-	            line: 46,
-	            column: 22
+	            line: 41,
+	            column: 17
 	          },
 	          end: {
-	            line: 46,
-	            column: 23
+	            line: 41,
+	            column: 18
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 46,
-	            column: 43
+	            line: 41,
+	            column: 28
 	          },
 	          end: {
-	            line: 54,
-	            column: 1
+	            line: 43,
+	            column: 5
 	          }
 	        },
-	        line: 46
+	        line: 41
 	      },
 	      '2': {
 	        name: '(anonymous_2)',
 	        decl: {
 	          start: {
-	            line: 68,
-	            column: 15
+	            line: 49,
+	            column: 22
 	          },
 	          end: {
-	            line: 68,
-	            column: 16
+	            line: 49,
+	            column: 23
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 68,
-	            column: 33
+	            line: 49,
+	            column: 43
 	          },
 	          end: {
-	            line: 72,
+	            line: 52,
 	            column: 1
 	          }
 	        },
-	        line: 68
+	        line: 49
 	      },
 	      '3': {
 	        name: '(anonymous_3)',
 	        decl: {
 	          start: {
-	            line: 69,
+	            line: 66,
+	            column: 15
+	          },
+	          end: {
+	            line: 66,
+	            column: 16
+	          }
+	        },
+	        loc: {
+	          start: {
+	            line: 66,
+	            column: 33
+	          },
+	          end: {
+	            line: 70,
+	            column: 1
+	          }
+	        },
+	        line: 66
+	      },
+	      '4': {
+	        name: '(anonymous_4)',
+	        decl: {
+	          start: {
+	            line: 67,
 	            column: 13
 	          },
 	          end: {
-	            line: 69,
+	            line: 67,
 	            column: 14
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 69,
+	            line: 67,
 	            column: 19
 	          },
 	          end: {
-	            line: 71,
+	            line: 69,
 	            column: 3
 	          }
 	        },
-	        line: 69
+	        line: 67
 	      }
 	    },
 	    branchMap: {
@@ -401,39 +425,6 @@
 	          }
 	        }],
 	        line: 11
-	      },
-	      '1': {
-	        loc: {
-	          start: {
-	            line: 50,
-	            column: 2
-	          },
-	          end: {
-	            line: 52,
-	            column: 3
-	          }
-	        },
-	        type: 'if',
-	        locations: [{
-	          start: {
-	            line: 50,
-	            column: 2
-	          },
-	          end: {
-	            line: 52,
-	            column: 3
-	          }
-	        }, {
-	          start: {
-	            line: 50,
-	            column: 2
-	          },
-	          end: {
-	            line: 52,
-	            column: 3
-	          }
-	        }],
-	        line: 50
 	      }
 	    },
 	    s: {
@@ -465,11 +456,11 @@
 	      '0': 0,
 	      '1': 0,
 	      '2': 0,
-	      '3': 0
+	      '3': 0,
+	      '4': 0
 	    },
 	    b: {
-	      '0': [0, 0],
-	      '1': [0, 0]
+	      '0': [0, 0]
 	    },
 	    _coverageSchema: '332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'
 	  },
@@ -483,52 +474,55 @@
 	  return coverage[path] = coverageData;
 	}();
 	var defaults = (cov_5yfkrdepa.s[0]++, {
-	  segments: []
+	  divides: []
 	});
 	var registerPlugin = (cov_5yfkrdepa.s[1]++, (cov_5yfkrdepa.b[0][0]++, videojs.registerPlugin) || (cov_5yfkrdepa.b[0][1]++, videojs.plugin));
 	cov_5yfkrdepa.s[2]++;
 
-	var testRender = function testRender(player, options) {
+	var renderDivides = function renderDivides(player, options) {
 	  cov_5yfkrdepa.f[0]++;
 	  var videoElement = (cov_5yfkrdepa.s[3]++, player.el());
 	  var ul = (cov_5yfkrdepa.s[4]++, document_1.createElement('ul'));
 	  cov_5yfkrdepa.s[5]++;
-	  ul.id = 'segments';
+	  ul.id = 'divides';
 	  cov_5yfkrdepa.s[6]++;
 	  ul.className = 'vjs-list';
 	  cov_5yfkrdepa.s[7]++;
 
-	  for (var i = 0; i < options.divides.length; i++) {
+	  var _loop = function _loop(i) {
 	    var li = (cov_5yfkrdepa.s[8]++, document_1.createElement('li'));
 	    cov_5yfkrdepa.s[9]++;
 	    li.className = 'vjs-list-item';
 	    cov_5yfkrdepa.s[10]++;
-	    ul.appendChild(li);
-	    cov_5yfkrdepa.s[11]++;
 	    li.innerHTML = 'startTime: ' + options.divides[i].startTime;
+	    cov_5yfkrdepa.s[11]++;
+
+	    li.onclick = function () {
+	      cov_5yfkrdepa.f[1]++;
+	      cov_5yfkrdepa.s[12]++;
+	      setTimeout(player.currentTime(options.divides[i].startTime));
+	    };
+
+	    cov_5yfkrdepa.s[13]++;
+	    ul.appendChild(li);
+	  };
+
+	  for (var i = 0; i < options.divides.length; i++) {
+	    _loop(i);
 	  }
 
-	  cov_5yfkrdepa.s[12]++;
+	  cov_5yfkrdepa.s[14]++;
 	  videoElement.appendChild(ul);
 	};
 
-	cov_5yfkrdepa.s[13]++;
+	cov_5yfkrdepa.s[15]++;
 
 	var onPlayerReady = function onPlayerReady(player, options) {
-	  cov_5yfkrdepa.f[1]++;
-	  cov_5yfkrdepa.s[14]++;
-	  player.addClass('vjs-divide');
-	  cov_5yfkrdepa.s[15]++;
-	  testRender(player, options);
+	  cov_5yfkrdepa.f[2]++;
 	  cov_5yfkrdepa.s[16]++;
-
-	  if (!options.segments) {
-	    cov_5yfkrdepa.b[1][0]++;
-	    cov_5yfkrdepa.s[17]++;
-	    return;
-	  } else {
-	    cov_5yfkrdepa.b[1][1]++;
-	  }
+	  player.addClass('vjs-divide');
+	  cov_5yfkrdepa.s[17]++;
+	  renderDivides(player, options);
 	};
 
 	cov_5yfkrdepa.s[18]++;
@@ -536,10 +530,10 @@
 	var divide = function divide(options) {
 	  var _this = this;
 
-	  cov_5yfkrdepa.f[2]++;
+	  cov_5yfkrdepa.f[3]++;
 	  cov_5yfkrdepa.s[19]++;
 	  this.ready(function () {
-	    cov_5yfkrdepa.f[3]++;
+	    cov_5yfkrdepa.f[4]++;
 	    cov_5yfkrdepa.s[20]++;
 	    onPlayerReady(_this, videojs.mergeOptions(defaults, options));
 	  });

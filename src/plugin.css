@@ -49,6 +49,7 @@
 }
 
 .vjs-list-item {
+  cursor: pointer;
   padding: 5px;
   margin-bottom: 5px;
   background: white;
