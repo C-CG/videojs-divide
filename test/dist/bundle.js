@@ -32,7 +32,7 @@
 
 	var cov_5yfkrdepa = function () {
 	  var path = '/Users/calvingill/Documents/videojs-plugin/videojs-divide/src/plugin.js',
-	      hash = '1c708951fdc7a7e4a998d755b1792ee1d95aa2f7',
+	      hash = '41e8bdd1fa3cee4a56c339ecc899ffc7714dac05',
 	      Function = function () {}.constructor,
 	      global = new Function('return this')(),
 	      gcv = '__coverage__',
@@ -62,7 +62,7 @@
 	      '2': {
 	        start: {
 	          line: 29,
-	          column: 22
+	          column: 26
 	        },
 	        end: {
 	          line: 47,
@@ -82,11 +82,11 @@
 	      '4': {
 	        start: {
 	          line: 31,
-	          column: 13
+	          column: 22
 	        },
 	        end: {
 	          line: 31,
-	          column: 41
+	          column: 51
 	        }
 	      },
 	      '5': {
@@ -96,22 +96,12 @@
 	        },
 	        end: {
 	          line: 33,
-	          column: 20
+	          column: 45
 	        }
 	      },
 	      '6': {
 	        start: {
-	          line: 34,
-	          column: 2
-	        },
-	        end: {
-	          line: 34,
-	          column: 28
-	        }
-	      },
-	      '7': {
-	        start: {
-	          line: 36,
+	          line: 35,
 	          column: 2
 	        },
 	        end: {
@@ -119,14 +109,24 @@
 	          column: 3
 	        }
 	      },
-	      '8': {
+	      '7': {
 	        start: {
-	          line: 37,
-	          column: 15
+	          line: 36,
+	          column: 19
 	        },
 	        end: {
-	          line: 37,
-	          column: 43
+	          line: 36,
+	          column: 48
+	        }
+	      },
+	      '8': {
+	        start: {
+	          line: 38,
+	          column: 4
+	        },
+	        end: {
+	          line: 38,
+	          column: 35
 	        }
 	      },
 	      '9': {
@@ -136,7 +136,7 @@
 	        },
 	        end: {
 	          line: 39,
-	          column: 35
+	          column: 49
 	        }
 	      },
 	      '10': {
@@ -146,7 +146,7 @@
 	        },
 	        end: {
 	          line: 40,
-	          column: 64
+	          column: 47
 	        }
 	      },
 	      '11': {
@@ -166,7 +166,7 @@
 	        },
 	        end: {
 	          line: 42,
-	          column: 67
+	          column: 55
 	        }
 	      },
 	      '13': {
@@ -176,7 +176,7 @@
 	        },
 	        end: {
 	          line: 44,
-	          column: 23
+	          column: 36
 	        }
 	      },
 	      '14': {
@@ -186,86 +186,186 @@
 	        },
 	        end: {
 	          line: 46,
-	          column: 31
+	          column: 40
 	        }
 	      },
 	      '15': {
 	        start: {
 	          line: 49,
-	          column: 22
+	          column: 21
 	        },
 	        end: {
-	          line: 52,
+	          line: 63,
 	          column: 1
 	        }
 	      },
 	      '16': {
 	        start: {
-	          line: 50,
-	          column: 2
+	          line: 51,
+	          column: 22
 	        },
 	        end: {
-	          line: 50,
-	          column: 32
+	          line: 51,
+	          column: 36
 	        }
 	      },
 	      '17': {
 	        start: {
-	          line: 51,
-	          column: 2
+	          line: 52,
+	          column: 24
 	        },
 	        end: {
-	          line: 51,
-	          column: 33
+	          line: 52,
+	          column: 27
 	        }
 	      },
 	      '18': {
 	        start: {
-	          line: 66,
-	          column: 15
+	          line: 54,
+	          column: 25
 	        },
 	        end: {
-	          line: 70,
-	          column: 1
+	          line: 54,
+	          column: 52
 	        }
 	      },
 	      '19': {
+	        start: {
+	          line: 56,
+	          column: 2
+	        },
+	        end: {
+	          line: 62,
+	          column: 3
+	        }
+	      },
+	      '20': {
+	        start: {
+	          line: 57,
+	          column: 16
+	        },
+	        end: {
+	          line: 57,
+	          column: 61
+	        }
+	      },
+	      '21': {
+	        start: {
+	          line: 58,
+	          column: 18
+	        },
+	        end: {
+	          line: 58,
+	          column: 75
+	        }
+	      },
+	      '22': {
+	        start: {
+	          line: 60,
+	          column: 4
+	        },
+	        end: {
+	          line: 60,
+	          column: 83
+	        }
+	      },
+	      '23': {
+	        start: {
+	          line: 61,
+	          column: 4
+	        },
+	        end: {
+	          line: 61,
+	          column: 86
+	        }
+	      },
+	      '24': {
+	        start: {
+	          line: 65,
+	          column: 22
+	        },
+	        end: {
+	          line: 69,
+	          column: 1
+	        }
+	      },
+	      '25': {
+	        start: {
+	          line: 66,
+	          column: 2
+	        },
+	        end: {
+	          line: 66,
+	          column: 32
+	        }
+	      },
+	      '26': {
 	        start: {
 	          line: 67,
 	          column: 2
 	        },
 	        end: {
-	          line: 69,
+	          line: 67,
+	          column: 37
+	        }
+	      },
+	      '27': {
+	        start: {
+	          line: 68,
+	          column: 2
+	        },
+	        end: {
+	          line: 68,
+	          column: 32
+	        }
+	      },
+	      '28': {
+	        start: {
+	          line: 83,
+	          column: 15
+	        },
+	        end: {
+	          line: 87,
+	          column: 1
+	        }
+	      },
+	      '29': {
+	        start: {
+	          line: 84,
+	          column: 2
+	        },
+	        end: {
+	          line: 86,
 	          column: 5
 	        }
 	      },
-	      '20': {
+	      '30': {
 	        start: {
-	          line: 68,
+	          line: 85,
 	          column: 4
 	        },
 	        end: {
-	          line: 68,
+	          line: 85,
 	          column: 65
 	        }
 	      },
-	      '21': {
+	      '31': {
 	        start: {
-	          line: 73,
+	          line: 90,
 	          column: 0
 	        },
 	        end: {
-	          line: 73,
+	          line: 90,
 	          column: 33
 	        }
 	      },
-	      '22': {
+	      '32': {
 	        start: {
-	          line: 76,
+	          line: 93,
 	          column: 0
 	        },
 	        end: {
-	          line: 76,
+	          line: 93,
 	          column: 25
 	        }
 	      }
@@ -276,17 +376,17 @@
 	        decl: {
 	          start: {
 	            line: 29,
-	            column: 22
+	            column: 26
 	          },
 	          end: {
 	            line: 29,
-	            column: 23
+	            column: 27
 	          }
 	        },
 	        loc: {
 	          start: {
 	            line: 29,
-	            column: 43
+	            column: 47
 	          },
 	          end: {
 	            line: 47,
@@ -300,17 +400,17 @@
 	        decl: {
 	          start: {
 	            line: 41,
-	            column: 17
+	            column: 21
 	          },
 	          end: {
 	            line: 41,
-	            column: 18
+	            column: 22
 	          }
 	        },
 	        loc: {
 	          start: {
 	            line: 41,
-	            column: 28
+	            column: 32
 	          },
 	          end: {
 	            line: 43,
@@ -324,20 +424,20 @@
 	        decl: {
 	          start: {
 	            line: 49,
-	            column: 22
+	            column: 21
 	          },
 	          end: {
 	            line: 49,
-	            column: 23
+	            column: 22
 	          }
 	        },
 	        loc: {
 	          start: {
 	            line: 49,
-	            column: 43
+	            column: 42
 	          },
 	          end: {
-	            line: 52,
+	            line: 63,
 	            column: 1
 	          }
 	        },
@@ -347,49 +447,73 @@
 	        name: '(anonymous_3)',
 	        decl: {
 	          start: {
-	            line: 66,
-	            column: 15
+	            line: 65,
+	            column: 22
 	          },
 	          end: {
-	            line: 66,
-	            column: 16
+	            line: 65,
+	            column: 23
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 66,
-	            column: 33
+	            line: 65,
+	            column: 43
 	          },
 	          end: {
-	            line: 70,
+	            line: 69,
 	            column: 1
 	          }
 	        },
-	        line: 66
+	        line: 65
 	      },
 	      '4': {
 	        name: '(anonymous_4)',
 	        decl: {
 	          start: {
-	            line: 67,
+	            line: 83,
+	            column: 15
+	          },
+	          end: {
+	            line: 83,
+	            column: 16
+	          }
+	        },
+	        loc: {
+	          start: {
+	            line: 83,
+	            column: 33
+	          },
+	          end: {
+	            line: 87,
+	            column: 1
+	          }
+	        },
+	        line: 83
+	      },
+	      '5': {
+	        name: '(anonymous_5)',
+	        decl: {
+	          start: {
+	            line: 84,
 	            column: 13
 	          },
 	          end: {
-	            line: 67,
+	            line: 84,
 	            column: 14
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 67,
+	            line: 84,
 	            column: 19
 	          },
 	          end: {
-	            line: 69,
+	            line: 86,
 	            column: 3
 	          }
 	        },
-	        line: 67
+	        line: 84
 	      }
 	    },
 	    branchMap: {
@@ -450,14 +574,25 @@
 	      '19': 0,
 	      '20': 0,
 	      '21': 0,
-	      '22': 0
+	      '22': 0,
+	      '23': 0,
+	      '24': 0,
+	      '25': 0,
+	      '26': 0,
+	      '27': 0,
+	      '28': 0,
+	      '29': 0,
+	      '30': 0,
+	      '31': 0,
+	      '32': 0
 	    },
 	    f: {
 	      '0': 0,
 	      '1': 0,
 	      '2': 0,
 	      '3': 0,
-	      '4': 0
+	      '4': 0,
+	      '5': 0
 	    },
 	    b: {
 	      '0': [0, 0]
@@ -479,32 +614,32 @@
 	var registerPlugin = (cov_5yfkrdepa.s[1]++, (cov_5yfkrdepa.b[0][0]++, videojs.registerPlugin) || (cov_5yfkrdepa.b[0][1]++, videojs.plugin));
 	cov_5yfkrdepa.s[2]++;
 
-	var renderDivides = function renderDivides(player, options) {
+	var renderProgressBar = function renderProgressBar(player, options) {
 	  cov_5yfkrdepa.f[0]++;
 	  var videoElement = (cov_5yfkrdepa.s[3]++, player.el());
-	  var ul = (cov_5yfkrdepa.s[4]++, document_1.createElement('ul'));
+	  var ProgressBar = (cov_5yfkrdepa.s[4]++, document_1.createElement('div'));
 	  cov_5yfkrdepa.s[5]++;
-	  ul.id = 'divides';
+	  ProgressBar.className = 'vjs-progress-bar';
 	  cov_5yfkrdepa.s[6]++;
-	  ul.className = 'vjs-list';
-	  cov_5yfkrdepa.s[7]++;
 
 	  var _loop = function _loop(i) {
-	    var li = (cov_5yfkrdepa.s[8]++, document_1.createElement('li'));
+	    var divide = (cov_5yfkrdepa.s[7]++, document_1.createElement('div'));
+	    cov_5yfkrdepa.s[8]++;
+	    divide.id = 'd' + i.toString();
 	    cov_5yfkrdepa.s[9]++;
-	    li.className = 'vjs-list-item';
+	    divide.className = 'vjs-progress-bar-divide';
 	    cov_5yfkrdepa.s[10]++;
-	    li.innerHTML = 'startTime: ' + options.divides[i].startTime;
+	    divide.innerHTML = options.divides[i].pose;
 	    cov_5yfkrdepa.s[11]++;
 
-	    li.onclick = function () {
+	    divide.onclick = function () {
 	      cov_5yfkrdepa.f[1]++;
 	      cov_5yfkrdepa.s[12]++;
-	      setTimeout(player.currentTime(options.divides[i].startTime));
+	      player.currentTime(options.divides[i].startTime);
 	    };
 
 	    cov_5yfkrdepa.s[13]++;
-	    ul.appendChild(li);
+	    ProgressBar.appendChild(divide);
 	  };
 
 	  for (var i = 0; i < options.divides.length; i++) {
@@ -512,36 +647,57 @@
 	  }
 
 	  cov_5yfkrdepa.s[14]++;
-	  videoElement.appendChild(ul);
+	  videoElement.appendChild(ProgressBar);
 	};
 
 	cov_5yfkrdepa.s[15]++;
 
-	var onPlayerReady = function onPlayerReady(player, options) {
+	var styleDivides = function styleDivides(player, options) {
 	  cov_5yfkrdepa.f[2]++;
-	  cov_5yfkrdepa.s[16]++;
-	  player.addClass('vjs-divide');
-	  cov_5yfkrdepa.s[17]++;
-	  renderDivides(player, options);
+	  var playerWidth = (cov_5yfkrdepa.s[16]++, player.width());
+	  var videoDuration = (cov_5yfkrdepa.s[17]++, 596);
+	  var widthPerSecond = (cov_5yfkrdepa.s[18]++, playerWidth / videoDuration);
+	  cov_5yfkrdepa.s[19]++;
+
+	  for (var i = 0; i < options.divides.length; i++) {
+	    var pos = (cov_5yfkrdepa.s[20]++, options.divides[i].startTime * widthPerSecond);
+	    var width = (cov_5yfkrdepa.s[21]++, options.divides[i].endTime - options.divides[i].startTime);
+	    cov_5yfkrdepa.s[22]++;
+	    document_1.getElementById('d' + i.toString()).style.left = pos.toString() + 'px';
+	    cov_5yfkrdepa.s[23]++;
+	    document_1.getElementById('d' + i.toString()).style.width = width.toString() + 'px';
+	  }
 	};
 
-	cov_5yfkrdepa.s[18]++;
+	cov_5yfkrdepa.s[24]++;
+
+	var onPlayerReady = function onPlayerReady(player, options) {
+	  cov_5yfkrdepa.f[3]++;
+	  cov_5yfkrdepa.s[25]++;
+	  player.addClass('vjs-divide');
+	  cov_5yfkrdepa.s[26]++;
+	  renderProgressBar(player, options);
+	  cov_5yfkrdepa.s[27]++;
+	  styleDivides(player, options);
+	};
+
+	cov_5yfkrdepa.s[28]++;
 
 	var divide = function divide(options) {
 	  var _this = this;
 
-	  cov_5yfkrdepa.f[3]++;
-	  cov_5yfkrdepa.s[19]++;
+	  cov_5yfkrdepa.f[4]++;
+	  cov_5yfkrdepa.s[29]++;
 	  this.ready(function () {
-	    cov_5yfkrdepa.f[4]++;
-	    cov_5yfkrdepa.s[20]++;
+	    cov_5yfkrdepa.f[5]++;
+	    cov_5yfkrdepa.s[30]++;
 	    onPlayerReady(_this, videojs.mergeOptions(defaults, options));
 	  });
 	};
 
-	cov_5yfkrdepa.s[21]++;
+	cov_5yfkrdepa.s[31]++;
 	registerPlugin('divide', divide);
-	cov_5yfkrdepa.s[22]++;
+	cov_5yfkrdepa.s[32]++;
 	divide.VERSION = version;
 
 	var Player = videojs.getComponent('Player');

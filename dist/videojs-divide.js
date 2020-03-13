@@ -31,34 +31,50 @@
    *           A plain object containing options for the plugin.
    */
 
-  var renderDivides = function renderDivides(player, options) {
+  var renderProgressBar = function renderProgressBar(player, options) {
     var videoElement = player.el();
-    var ul = document.createElement('ul');
-    ul.id = 'divides';
-    ul.className = 'vjs-list'; // Looping divides
+    var ProgressBar = document.createElement('div');
+    ProgressBar.className = 'vjs-progress-bar'; // Looping divides
 
     var _loop = function _loop(i) {
-      var li = document.createElement('li');
-      li.className = 'vjs-list-item';
-      li.innerHTML = 'startTime: ' + options.divides[i].startTime;
+      var divide = document.createElement('div');
+      divide.id = 'd' + i.toString();
+      divide.className = 'vjs-progress-bar-divide';
+      divide.innerHTML = options.divides[i].pose;
 
-      li.onclick = function () {
-        setTimeout(player.currentTime(options.divides[i].startTime));
+      divide.onclick = function () {
+        player.currentTime(options.divides[i].startTime);
       };
 
-      ul.appendChild(li);
+      ProgressBar.appendChild(divide);
     };
 
     for (var i = 0; i < options.divides.length; i++) {
       _loop(i);
     }
 
-    videoElement.appendChild(ul);
+    videoElement.appendChild(ProgressBar);
+  };
+
+  var styleDivides = function styleDivides(player, options) {
+    // 440
+    var playerWidth = player.width();
+    var videoDuration = 596; // width in px per second (used)
+
+    var widthPerSecond = playerWidth / videoDuration;
+
+    for (var i = 0; i < options.divides.length; i++) {
+      var pos = options.divides[i].startTime * widthPerSecond;
+      var width = options.divides[i].endTime - options.divides[i].startTime;
+      document.getElementById('d' + i.toString()).style.left = pos.toString() + 'px';
+      document.getElementById('d' + i.toString()).style.width = width.toString() + 'px';
+    }
   };
 
   var onPlayerReady = function onPlayerReady(player, options) {
     player.addClass('vjs-divide');
-    renderDivides(player, options);
+    renderProgressBar(player, options);
+    styleDivides(player, options);
   };
   /**
    * A video.js plugin.

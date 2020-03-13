@@ -26,29 +26,46 @@ const registerPlugin = videojs.registerPlugin || videojs.plugin;
  *           A plain object containing options for the plugin.
  */
 
-const renderDivides = (player, options) => {
+const renderProgressBar = (player, options) => {
   const videoElement = player.el();
-  const ul = document.createElement('ul');
+  const ProgressBar = document.createElement('div');
 
-  ul.id = 'divides';
-  ul.className = 'vjs-list';
+  ProgressBar.className = 'vjs-progress-bar';
   // Looping divides
   for (let i = 0; i < options.divides.length; i++) {
-    const li = document.createElement('li');
+    const divide = document.createElement('div');
 
-    li.className = 'vjs-list-item';
-    li.innerHTML = 'startTime: ' + options.divides[i].startTime;
-    li.onclick = function() {
-      setTimeout(player.currentTime(options.divides[i].startTime));
+    divide.id = 'd' + i.toString();
+    divide.className = 'vjs-progress-bar-divide';
+    divide.innerHTML = options.divides[i].pose;
+    divide.onclick = function () {
+      player.currentTime(options.divides[i].startTime);
     };
-    ul.appendChild(li);
+    ProgressBar.appendChild(divide);
   }
-  videoElement.appendChild(ul);
+  videoElement.appendChild(ProgressBar);
+};
+
+const styleDivides = (player, options) => {
+  // 440
+  const playerWidth = player.width();
+  const videoDuration = 596;
+  // width in px per second (used)
+  const widthPerSecond = playerWidth / videoDuration;
+
+  for (let i = 0; i < options.divides.length; i++) {
+    const pos = options.divides[i].startTime * widthPerSecond;
+    const width = options.divides[i].endTime - options.divides[i].startTime;
+
+    document.getElementById('d' + i.toString()).style.left = pos.toString() + 'px';
+    document.getElementById('d' + i.toString()).style.width = width.toString() + 'px';
+  }
 };
 
 const onPlayerReady = (player, options) => {
   player.addClass('vjs-divide');
-  renderDivides(player, options);
+  renderProgressBar(player, options);
+  styleDivides(player, options);
 };
 
 /**
@@ -63,7 +80,7 @@ const onPlayerReady = (player, options) => {
  * @param    {Object} [options={}]
  *           An object of options left to the plugin author to define.
  */
-const divide = function(options) {
+const divide = function (options) {
   this.ready(() => {
     onPlayerReady(this, videojs.mergeOptions(defaults, options));
   });

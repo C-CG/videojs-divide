@@ -54,3 +54,22 @@
   margin-bottom: 5px;
   background: white;
 }
+
+.vjs-progress-bar {
+  position: absolute;
+  bottom: 0;
+  background: red;
+  height: 20px;
+  width: 440px; /* Needs to read in from player */
+}
+
+.vjs-progress-bar-divide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background: blue;
+  height: 20px;
+  cursor: pointer;
+}
