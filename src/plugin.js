@@ -62,10 +62,19 @@ const styleDivides = (player, options) => {
   }
 };
 
+const testProgressGet = (player) => {
+  const controls = player.controlBar;
+  const progress = controls.progressControl;
+  const seekBar = progress.seekBar;
+  seekBar.addChild('Button');
+  videojs.log('EL: ', seekBar.el());
+};
+
 const onPlayerReady = (player, options) => {
   player.addClass('vjs-divide');
   renderProgressBar(player, options);
   styleDivides(player, options);
+  testProgressGet(player);
 };
 
 /**

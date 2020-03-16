@@ -69,10 +69,19 @@ var styleDivides = function styleDivides(player, options) {
   }
 };
 
+var testProgressGet = function testProgressGet(player) {
+  var controls = player.controlBar;
+  var progress = controls.progressControl;
+  var seekBar = progress.seekBar;
+  seekBar.addChild('Button');
+  videojs.log('EL: ', seekBar.el());
+};
+
 var onPlayerReady = function onPlayerReady(player, options) {
   player.addClass('vjs-divide');
   renderProgressBar(player, options);
   styleDivides(player, options);
+  testProgressGet(player);
 };
 /**
  * A video.js plugin.

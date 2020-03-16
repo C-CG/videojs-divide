@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Passing data to the plugin</title>
+  <link href="dist/videojs-divide.css" rel="stylesheet">
+  <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" />
+</head>
+
+<body>
+  <video id="id" class="video-js vjs-big-play-centered" width="440px" height="260px" controls>
+    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+  </video>
+  <script src="https://vjs.zencdn.net/7.6.6/video.js"></script>
+  <script type="text/javascript" src="dist/videojs-divide.js"></script>
+  <script type="text/javascript">
+    const player = videojs('id')
+    const options = { divides: [{ "startTime": 0, "endTime": 10, "pose": 1 }, { "startTime": 15, "endTime": 30, "pose": 2 }, { "startTime": 60, "endTime": 100, "pose": 3 }] }
+    player.divide(options)
+  </script>
+  <p>Testing Data being passed through my plugin.</p>
+</body>
+
+</html>

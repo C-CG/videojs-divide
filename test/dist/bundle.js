@@ -32,7 +32,7 @@
 
 	var cov_5yfkrdepa = function () {
 	  var path = '/Users/calvingill/Documents/videojs-plugin/videojs-divide/src/plugin.js',
-	      hash = '41e8bdd1fa3cee4a56c339ecc899ffc7714dac05',
+	      hash = '142b7b429486d56986e6c6b3981cbc850d3b0342',
 	      Function = function () {}.constructor,
 	      global = new Function('return this')(),
 	      gcv = '__coverage__',
@@ -282,90 +282,160 @@
 	      '24': {
 	        start: {
 	          line: 65,
-	          column: 22
+	          column: 24
 	        },
 	        end: {
-	          line: 69,
+	          line: 71,
 	          column: 1
 	        }
 	      },
 	      '25': {
 	        start: {
 	          line: 66,
-	          column: 2
+	          column: 19
 	        },
 	        end: {
 	          line: 66,
-	          column: 32
+	          column: 36
 	        }
 	      },
 	      '26': {
 	        start: {
 	          line: 67,
-	          column: 2
+	          column: 19
 	        },
 	        end: {
 	          line: 67,
-	          column: 37
+	          column: 43
 	        }
 	      },
 	      '27': {
 	        start: {
 	          line: 68,
-	          column: 2
+	          column: 18
 	        },
 	        end: {
 	          line: 68,
-	          column: 32
+	          column: 34
 	        }
 	      },
 	      '28': {
 	        start: {
-	          line: 83,
-	          column: 15
+	          line: 69,
+	          column: 2
 	        },
 	        end: {
-	          line: 87,
-	          column: 1
+	          line: 69,
+	          column: 29
 	        }
 	      },
 	      '29': {
 	        start: {
-	          line: 84,
+	          line: 70,
 	          column: 2
 	        },
 	        end: {
-	          line: 86,
-	          column: 5
+	          line: 70,
+	          column: 36
 	        }
 	      },
 	      '30': {
 	        start: {
-	          line: 85,
-	          column: 4
+	          line: 73,
+	          column: 22
 	        },
 	        end: {
-	          line: 85,
-	          column: 65
+	          line: 78,
+	          column: 1
 	        }
 	      },
 	      '31': {
 	        start: {
-	          line: 90,
-	          column: 0
+	          line: 74,
+	          column: 2
 	        },
 	        end: {
-	          line: 90,
-	          column: 33
+	          line: 74,
+	          column: 32
 	        }
 	      },
 	      '32': {
 	        start: {
+	          line: 75,
+	          column: 2
+	        },
+	        end: {
+	          line: 75,
+	          column: 37
+	        }
+	      },
+	      '33': {
+	        start: {
+	          line: 76,
+	          column: 2
+	        },
+	        end: {
+	          line: 76,
+	          column: 32
+	        }
+	      },
+	      '34': {
+	        start: {
+	          line: 77,
+	          column: 2
+	        },
+	        end: {
+	          line: 77,
+	          column: 26
+	        }
+	      },
+	      '35': {
+	        start: {
+	          line: 92,
+	          column: 15
+	        },
+	        end: {
+	          line: 96,
+	          column: 1
+	        }
+	      },
+	      '36': {
+	        start: {
 	          line: 93,
+	          column: 2
+	        },
+	        end: {
+	          line: 95,
+	          column: 5
+	        }
+	      },
+	      '37': {
+	        start: {
+	          line: 94,
+	          column: 4
+	        },
+	        end: {
+	          line: 94,
+	          column: 65
+	        }
+	      },
+	      '38': {
+	        start: {
+	          line: 99,
 	          column: 0
 	        },
 	        end: {
-	          line: 93,
+	          line: 99,
+	          column: 33
+	        }
+	      },
+	      '39': {
+	        start: {
+	          line: 102,
+	          column: 0
+	        },
+	        end: {
+	          line: 102,
 	          column: 25
 	        }
 	      }
@@ -410,7 +480,7 @@
 	        loc: {
 	          start: {
 	            line: 41,
-	            column: 32
+	            column: 33
 	          },
 	          end: {
 	            line: 43,
@@ -448,20 +518,20 @@
 	        decl: {
 	          start: {
 	            line: 65,
-	            column: 22
+	            column: 24
 	          },
 	          end: {
 	            line: 65,
-	            column: 23
+	            column: 25
 	          }
 	        },
 	        loc: {
 	          start: {
 	            line: 65,
-	            column: 43
+	            column: 36
 	          },
 	          end: {
-	            line: 69,
+	            line: 71,
 	            column: 1
 	          }
 	        },
@@ -471,49 +541,73 @@
 	        name: '(anonymous_4)',
 	        decl: {
 	          start: {
-	            line: 83,
-	            column: 15
+	            line: 73,
+	            column: 22
 	          },
 	          end: {
-	            line: 83,
-	            column: 16
+	            line: 73,
+	            column: 23
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 83,
-	            column: 33
+	            line: 73,
+	            column: 43
 	          },
 	          end: {
-	            line: 87,
+	            line: 78,
 	            column: 1
 	          }
 	        },
-	        line: 83
+	        line: 73
 	      },
 	      '5': {
 	        name: '(anonymous_5)',
 	        decl: {
 	          start: {
-	            line: 84,
+	            line: 92,
+	            column: 15
+	          },
+	          end: {
+	            line: 92,
+	            column: 16
+	          }
+	        },
+	        loc: {
+	          start: {
+	            line: 92,
+	            column: 34
+	          },
+	          end: {
+	            line: 96,
+	            column: 1
+	          }
+	        },
+	        line: 92
+	      },
+	      '6': {
+	        name: '(anonymous_6)',
+	        decl: {
+	          start: {
+	            line: 93,
 	            column: 13
 	          },
 	          end: {
-	            line: 84,
+	            line: 93,
 	            column: 14
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 84,
+	            line: 93,
 	            column: 19
 	          },
 	          end: {
-	            line: 86,
+	            line: 95,
 	            column: 3
 	          }
 	        },
-	        line: 84
+	        line: 93
 	      }
 	    },
 	    branchMap: {
@@ -584,7 +678,14 @@
 	      '29': 0,
 	      '30': 0,
 	      '31': 0,
-	      '32': 0
+	      '32': 0,
+	      '33': 0,
+	      '34': 0,
+	      '35': 0,
+	      '36': 0,
+	      '37': 0,
+	      '38': 0,
+	      '39': 0
 	    },
 	    f: {
 	      '0': 0,
@@ -592,7 +693,8 @@
 	      '2': 0,
 	      '3': 0,
 	      '4': 0,
-	      '5': 0
+	      '5': 0,
+	      '6': 0
 	    },
 	    b: {
 	      '0': [0, 0]
@@ -671,33 +773,48 @@
 
 	cov_5yfkrdepa.s[24]++;
 
-	var onPlayerReady = function onPlayerReady(player, options) {
+	var testProgressGet = function testProgressGet(player) {
 	  cov_5yfkrdepa.f[3]++;
-	  cov_5yfkrdepa.s[25]++;
-	  player.addClass('vjs-divide');
-	  cov_5yfkrdepa.s[26]++;
-	  renderProgressBar(player, options);
-	  cov_5yfkrdepa.s[27]++;
-	  styleDivides(player, options);
+	  var controls = (cov_5yfkrdepa.s[25]++, player.controlBar);
+	  var progress = (cov_5yfkrdepa.s[26]++, controls.progressControl);
+	  var seekBar = (cov_5yfkrdepa.s[27]++, progress.seekBar);
+	  cov_5yfkrdepa.s[28]++;
+	  seekBar.addChild('Button');
+	  cov_5yfkrdepa.s[29]++;
+	  videojs.log('EL: ', seekBar.el());
 	};
 
-	cov_5yfkrdepa.s[28]++;
+	cov_5yfkrdepa.s[30]++;
+
+	var onPlayerReady = function onPlayerReady(player, options) {
+	  cov_5yfkrdepa.f[4]++;
+	  cov_5yfkrdepa.s[31]++;
+	  player.addClass('vjs-divide');
+	  cov_5yfkrdepa.s[32]++;
+	  renderProgressBar(player, options);
+	  cov_5yfkrdepa.s[33]++;
+	  styleDivides(player, options);
+	  cov_5yfkrdepa.s[34]++;
+	  testProgressGet(player);
+	};
+
+	cov_5yfkrdepa.s[35]++;
 
 	var divide = function divide(options) {
 	  var _this = this;
 
-	  cov_5yfkrdepa.f[4]++;
-	  cov_5yfkrdepa.s[29]++;
+	  cov_5yfkrdepa.f[5]++;
+	  cov_5yfkrdepa.s[36]++;
 	  this.ready(function () {
-	    cov_5yfkrdepa.f[5]++;
-	    cov_5yfkrdepa.s[30]++;
+	    cov_5yfkrdepa.f[6]++;
+	    cov_5yfkrdepa.s[37]++;
 	    onPlayerReady(_this, videojs.mergeOptions(defaults, options));
 	  });
 	};
 
-	cov_5yfkrdepa.s[31]++;
+	cov_5yfkrdepa.s[38]++;
 	registerPlugin('divide', divide);
-	cov_5yfkrdepa.s[32]++;
+	cov_5yfkrdepa.s[39]++;
 	divide.VERSION = version;
 
 	var Player = videojs.getComponent('Player');
