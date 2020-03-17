@@ -28,16 +28,22 @@
 
 	var document_1 = doccy;
 
+	function _inheritsLoose(subClass, superClass) {
+	  subClass.prototype = Object.create(superClass.prototype);
+	  subClass.prototype.constructor = subClass;
+	  subClass.__proto__ = superClass;
+	}
+
 	var version = "0.0.0";
 
-	var cov_5yfkrdepa = function () {
-	  var path = '/Users/calvingill/Documents/videojs-plugin/videojs-divide/src/plugin.js',
-	      hash = '142b7b429486d56986e6c6b3981cbc850d3b0342',
+	var cov_1qcqhi23by = function () {
+	  var path = "C:\\Users\\Calvin\\Documents\\Zing\\videojs-divide\\src\\plugin.js",
+	      hash = '56dffb69ea35420ecb146167e81fb7fd580e16cc',
 	      Function = function () {}.constructor,
 	      global = new Function('return this')(),
 	      gcv = '__coverage__',
 	      coverageData = {
-	    path: '/Users/calvingill/Documents/videojs-plugin/videojs-divide/src/plugin.js',
+	    path: "C:\\Users\\Calvin\\Documents\\Zing\\videojs-divide\\src\\plugin.js",
 	    statementMap: {
 	      '0': {
 	        start: {
@@ -195,7 +201,7 @@
 	          column: 21
 	        },
 	        end: {
-	          line: 63,
+	          line: 65,
 	          column: 1
 	        }
 	      },
@@ -235,7 +241,7 @@
 	          column: 2
 	        },
 	        end: {
-	          line: 62,
+	          line: 64,
 	          column: 3
 	        }
 	      },
@@ -265,177 +271,197 @@
 	          column: 4
 	        },
 	        end: {
-	          line: 60,
-	          column: 83
+	          line: 61,
+	          column: 28
 	        }
 	      },
 	      '23': {
 	        start: {
-	          line: 61,
+	          line: 62,
 	          column: 4
 	        },
 	        end: {
-	          line: 61,
-	          column: 86
+	          line: 63,
+	          column: 30
 	        }
 	      },
 	      '24': {
 	        start: {
-	          line: 65,
-	          column: 24
+	          line: 69,
+	          column: 4
 	        },
 	        end: {
-	          line: 71,
-	          column: 1
+	          line: 69,
+	          column: 27
 	        }
 	      },
 	      '25': {
 	        start: {
-	          line: 66,
-	          column: 19
+	          line: 70,
+	          column: 4
 	        },
 	        end: {
-	          line: 66,
-	          column: 36
+	          line: 70,
+	          column: 31
 	        }
 	      },
 	      '26': {
 	        start: {
-	          line: 67,
-	          column: 19
+	          line: 73,
+	          column: 4
 	        },
 	        end: {
-	          line: 67,
-	          column: 43
+	          line: 73,
+	          column: 34
 	        }
 	      },
 	      '27': {
 	        start: {
-	          line: 68,
-	          column: 18
+	          line: 76,
+	          column: 4
 	        },
 	        end: {
-	          line: 68,
-	          column: 34
+	          line: 78,
+	          column: 7
 	        }
 	      },
 	      '28': {
 	        start: {
-	          line: 69,
-	          column: 2
+	          line: 82,
+	          column: 0
 	        },
 	        end: {
-	          line: 69,
-	          column: 29
+	          line: 82,
+	          column: 44
 	        }
 	      },
 	      '29': {
 	        start: {
-	          line: 70,
-	          column: 2
+	          line: 84,
+	          column: 18
 	        },
 	        end: {
-	          line: 70,
-	          column: 36
+	          line: 88,
+	          column: 1
 	        }
 	      },
 	      '30': {
 	        start: {
-	          line: 73,
+	          line: 85,
 	          column: 22
 	        },
 	        end: {
-	          line: 78,
-	          column: 1
+	          line: 85,
+	          column: 63
 	        }
 	      },
 	      '31': {
 	        start: {
-	          line: 74,
+	          line: 87,
 	          column: 2
 	        },
 	        end: {
-	          line: 74,
-	          column: 32
+	          line: 87,
+	          column: 33
 	        }
 	      },
 	      '32': {
 	        start: {
-	          line: 75,
-	          column: 2
+	          line: 90,
+	          column: 22
 	        },
 	        end: {
-	          line: 75,
-	          column: 37
+	          line: 95,
+	          column: 1
 	        }
 	      },
 	      '33': {
 	        start: {
-	          line: 76,
+	          line: 91,
 	          column: 2
 	        },
 	        end: {
-	          line: 76,
+	          line: 91,
 	          column: 32
 	        }
 	      },
 	      '34': {
 	        start: {
-	          line: 77,
+	          line: 92,
 	          column: 2
 	        },
 	        end: {
-	          line: 77,
-	          column: 26
+	          line: 92,
+	          column: 37
 	        }
 	      },
 	      '35': {
-	        start: {
-	          line: 92,
-	          column: 15
-	        },
-	        end: {
-	          line: 96,
-	          column: 1
-	        }
-	      },
-	      '36': {
 	        start: {
 	          line: 93,
 	          column: 2
 	        },
 	        end: {
-	          line: 95,
-	          column: 5
+	          line: 93,
+	          column: 32
+	        }
+	      },
+	      '36': {
+	        start: {
+	          line: 94,
+	          column: 2
+	        },
+	        end: {
+	          line: 94,
+	          column: 20
 	        }
 	      },
 	      '37': {
 	        start: {
-	          line: 94,
-	          column: 4
+	          line: 109,
+	          column: 15
 	        },
 	        end: {
-	          line: 94,
-	          column: 65
+	          line: 113,
+	          column: 1
 	        }
 	      },
 	      '38': {
 	        start: {
-	          line: 99,
-	          column: 0
+	          line: 110,
+	          column: 2
 	        },
 	        end: {
-	          line: 99,
-	          column: 33
+	          line: 112,
+	          column: 5
 	        }
 	      },
 	      '39': {
 	        start: {
-	          line: 102,
+	          line: 111,
+	          column: 4
+	        },
+	        end: {
+	          line: 111,
+	          column: 65
+	        }
+	      },
+	      '40': {
+	        start: {
+	          line: 116,
 	          column: 0
 	        },
 	        end: {
-	          line: 102,
+	          line: 116,
+	          column: 33
+	        }
+	      },
+	      '41': {
+	        start: {
+	          line: 119,
+	          column: 0
+	        },
+	        end: {
+	          line: 119,
 	          column: 25
 	        }
 	      }
@@ -480,7 +506,7 @@
 	        loc: {
 	          start: {
 	            line: 41,
-	            column: 33
+	            column: 32
 	          },
 	          end: {
 	            line: 43,
@@ -507,7 +533,7 @@
 	            column: 42
 	          },
 	          end: {
-	            line: 63,
+	            line: 65,
 	            column: 1
 	          }
 	        },
@@ -517,97 +543,169 @@
 	        name: '(anonymous_3)',
 	        decl: {
 	          start: {
-	            line: 65,
-	            column: 24
+	            line: 68,
+	            column: 2
 	          },
 	          end: {
-	            line: 65,
-	            column: 25
+	            line: 68,
+	            column: 3
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 65,
-	            column: 36
+	            line: 68,
+	            column: 31
 	          },
 	          end: {
 	            line: 71,
-	            column: 1
+	            column: 3
 	          }
 	        },
-	        line: 65
+	        line: 68
 	      },
 	      '4': {
 	        name: '(anonymous_4)',
 	        decl: {
 	          start: {
-	            line: 73,
-	            column: 22
+	            line: 72,
+	            column: 2
 	          },
 	          end: {
-	            line: 73,
-	            column: 23
+	            line: 72,
+	            column: 3
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 73,
-	            column: 43
+	            line: 72,
+	            column: 16
 	          },
 	          end: {
-	            line: 78,
-	            column: 1
+	            line: 74,
+	            column: 3
 	          }
 	        },
-	        line: 73
+	        line: 72
 	      },
 	      '5': {
 	        name: '(anonymous_5)',
 	        decl: {
 	          start: {
-	            line: 92,
-	            column: 15
+	            line: 75,
+	            column: 2
 	          },
 	          end: {
-	            line: 92,
-	            column: 16
+	            line: 75,
+	            column: 3
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 92,
-	            column: 34
+	            line: 75,
+	            column: 13
 	          },
 	          end: {
-	            line: 96,
-	            column: 1
+	            line: 79,
+	            column: 3
 	          }
 	        },
-	        line: 92
+	        line: 75
 	      },
 	      '6': {
 	        name: '(anonymous_6)',
 	        decl: {
 	          start: {
-	            line: 93,
+	            line: 84,
+	            column: 18
+	          },
+	          end: {
+	            line: 84,
+	            column: 19
+	          }
+	        },
+	        loc: {
+	          start: {
+	            line: 84,
+	            column: 30
+	          },
+	          end: {
+	            line: 88,
+	            column: 1
+	          }
+	        },
+	        line: 84
+	      },
+	      '7': {
+	        name: '(anonymous_7)',
+	        decl: {
+	          start: {
+	            line: 90,
+	            column: 22
+	          },
+	          end: {
+	            line: 90,
+	            column: 23
+	          }
+	        },
+	        loc: {
+	          start: {
+	            line: 90,
+	            column: 43
+	          },
+	          end: {
+	            line: 95,
+	            column: 1
+	          }
+	        },
+	        line: 90
+	      },
+	      '8': {
+	        name: '(anonymous_8)',
+	        decl: {
+	          start: {
+	            line: 109,
+	            column: 15
+	          },
+	          end: {
+	            line: 109,
+	            column: 16
+	          }
+	        },
+	        loc: {
+	          start: {
+	            line: 109,
+	            column: 33
+	          },
+	          end: {
+	            line: 113,
+	            column: 1
+	          }
+	        },
+	        line: 109
+	      },
+	      '9': {
+	        name: '(anonymous_9)',
+	        decl: {
+	          start: {
+	            line: 110,
 	            column: 13
 	          },
 	          end: {
-	            line: 93,
+	            line: 110,
 	            column: 14
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 93,
+	            line: 110,
 	            column: 19
 	          },
 	          end: {
-	            line: 95,
+	            line: 112,
 	            column: 3
 	          }
 	        },
-	        line: 93
+	        line: 110
 	      }
 	    },
 	    branchMap: {
@@ -685,7 +783,9 @@
 	      '36': 0,
 	      '37': 0,
 	      '38': 0,
-	      '39': 0
+	      '39': 0,
+	      '40': 0,
+	      '41': 0
 	    },
 	    f: {
 	      '0': 0,
@@ -694,7 +794,10 @@
 	      '3': 0,
 	      '4': 0,
 	      '5': 0,
-	      '6': 0
+	      '6': 0,
+	      '7': 0,
+	      '8': 0,
+	      '9': 0
 	    },
 	    b: {
 	      '0': [0, 0]
@@ -710,37 +813,37 @@
 	  coverageData.hash = hash;
 	  return coverage[path] = coverageData;
 	}();
-	var defaults = (cov_5yfkrdepa.s[0]++, {
+	var defaults = (cov_1qcqhi23by.s[0]++, {
 	  divides: []
 	});
-	var registerPlugin = (cov_5yfkrdepa.s[1]++, (cov_5yfkrdepa.b[0][0]++, videojs.registerPlugin) || (cov_5yfkrdepa.b[0][1]++, videojs.plugin));
-	cov_5yfkrdepa.s[2]++;
+	var registerPlugin = (cov_1qcqhi23by.s[1]++, (cov_1qcqhi23by.b[0][0]++, videojs.registerPlugin) || (cov_1qcqhi23by.b[0][1]++, videojs.plugin));
+	cov_1qcqhi23by.s[2]++;
 
 	var renderProgressBar = function renderProgressBar(player, options) {
-	  cov_5yfkrdepa.f[0]++;
-	  var videoElement = (cov_5yfkrdepa.s[3]++, player.el());
-	  var ProgressBar = (cov_5yfkrdepa.s[4]++, document_1.createElement('div'));
-	  cov_5yfkrdepa.s[5]++;
+	  cov_1qcqhi23by.f[0]++;
+	  var videoElement = (cov_1qcqhi23by.s[3]++, player.el());
+	  var ProgressBar = (cov_1qcqhi23by.s[4]++, document_1.createElement('div'));
+	  cov_1qcqhi23by.s[5]++;
 	  ProgressBar.className = 'vjs-progress-bar';
-	  cov_5yfkrdepa.s[6]++;
+	  cov_1qcqhi23by.s[6]++;
 
 	  var _loop = function _loop(i) {
-	    var divide = (cov_5yfkrdepa.s[7]++, document_1.createElement('div'));
-	    cov_5yfkrdepa.s[8]++;
+	    var divide = (cov_1qcqhi23by.s[7]++, document_1.createElement('div'));
+	    cov_1qcqhi23by.s[8]++;
 	    divide.id = 'd' + i.toString();
-	    cov_5yfkrdepa.s[9]++;
+	    cov_1qcqhi23by.s[9]++;
 	    divide.className = 'vjs-progress-bar-divide';
-	    cov_5yfkrdepa.s[10]++;
+	    cov_1qcqhi23by.s[10]++;
 	    divide.innerHTML = options.divides[i].pose;
-	    cov_5yfkrdepa.s[11]++;
+	    cov_1qcqhi23by.s[11]++;
 
 	    divide.onclick = function () {
-	      cov_5yfkrdepa.f[1]++;
-	      cov_5yfkrdepa.s[12]++;
+	      cov_1qcqhi23by.f[1]++;
+	      cov_1qcqhi23by.s[12]++;
 	      player.currentTime(options.divides[i].startTime);
 	    };
 
-	    cov_5yfkrdepa.s[13]++;
+	    cov_1qcqhi23by.s[13]++;
 	    ProgressBar.appendChild(divide);
 	  };
 
@@ -748,73 +851,106 @@
 	    _loop(i);
 	  }
 
-	  cov_5yfkrdepa.s[14]++;
+	  cov_1qcqhi23by.s[14]++;
 	  videoElement.appendChild(ProgressBar);
 	};
 
-	cov_5yfkrdepa.s[15]++;
+	cov_1qcqhi23by.s[15]++;
 
 	var styleDivides = function styleDivides(player, options) {
-	  cov_5yfkrdepa.f[2]++;
-	  var playerWidth = (cov_5yfkrdepa.s[16]++, player.width());
-	  var videoDuration = (cov_5yfkrdepa.s[17]++, 596);
-	  var widthPerSecond = (cov_5yfkrdepa.s[18]++, playerWidth / videoDuration);
-	  cov_5yfkrdepa.s[19]++;
+	  cov_1qcqhi23by.f[2]++;
+	  var playerWidth = (cov_1qcqhi23by.s[16]++, player.width());
+	  var videoDuration = (cov_1qcqhi23by.s[17]++, 596);
+	  var widthPerSecond = (cov_1qcqhi23by.s[18]++, playerWidth / videoDuration);
+	  cov_1qcqhi23by.s[19]++;
 
 	  for (var i = 0; i < options.divides.length; i++) {
-	    var pos = (cov_5yfkrdepa.s[20]++, options.divides[i].startTime * widthPerSecond);
-	    var width = (cov_5yfkrdepa.s[21]++, options.divides[i].endTime - options.divides[i].startTime);
-	    cov_5yfkrdepa.s[22]++;
+	    var pos = (cov_1qcqhi23by.s[20]++, options.divides[i].startTime * widthPerSecond);
+	    var width = (cov_1qcqhi23by.s[21]++, options.divides[i].endTime - options.divides[i].startTime);
+	    cov_1qcqhi23by.s[22]++;
 	    document_1.getElementById('d' + i.toString()).style.left = pos.toString() + 'px';
-	    cov_5yfkrdepa.s[23]++;
+	    cov_1qcqhi23by.s[23]++;
 	    document_1.getElementById('d' + i.toString()).style.width = width.toString() + 'px';
 	  }
 	};
 
-	cov_5yfkrdepa.s[24]++;
+	var Divide =
+	/*#__PURE__*/
+	function (_videojs$getComponent) {
+	  _inheritsLoose(Divide, _videojs$getComponent);
 
-	var testProgressGet = function testProgressGet(player) {
-	  cov_5yfkrdepa.f[3]++;
-	  var controls = (cov_5yfkrdepa.s[25]++, player.controlBar);
-	  var progress = (cov_5yfkrdepa.s[26]++, controls.progressControl);
-	  var seekBar = (cov_5yfkrdepa.s[27]++, progress.seekBar);
-	  cov_5yfkrdepa.s[28]++;
-	  seekBar.addChild('Button');
-	  cov_5yfkrdepa.s[29]++;
-	  videojs.log('EL: ', seekBar.el());
+	  function Divide(player, options) {
+	    var _this;
+
+	    cov_1qcqhi23by.f[3]++;
+	    cov_1qcqhi23by.s[24]++;
+	    _this = _videojs$getComponent.call(this, player, options) || this;
+	    cov_1qcqhi23by.s[25]++;
+	    videojs.log('Divide INIT');
+	    return _this;
+	  }
+
+	  var _proto = Divide.prototype;
+
+	  _proto.handleClick = function handleClick() {
+	    cov_1qcqhi23by.f[4]++;
+	    cov_1qcqhi23by.s[26]++;
+	    videojs.log('Divide Clicked');
+	  };
+
+	  _proto.createEl = function createEl() {
+	    cov_1qcqhi23by.f[5]++;
+	    cov_1qcqhi23by.s[27]++;
+	    return videojs.dom.createEl('div', {
+	      className: 'vjs-test-divide'
+	    });
+	  };
+
+	  return Divide;
+	}(videojs.getComponent('ClickableComponent'));
+
+	cov_1qcqhi23by.s[28]++;
+	videojs.registerComponent('Divide', Divide);
+	cov_1qcqhi23by.s[29]++;
+
+	var addDivide = function addDivide(player) {
+	  cov_1qcqhi23by.f[6]++;
+	  var progressBar = (cov_1qcqhi23by.s[30]++, player.controlBar.progressControl.seekBar);
+	  cov_1qcqhi23by.s[31]++;
+	  progressBar.addChild('Divide');
 	};
 
-	cov_5yfkrdepa.s[30]++;
+	cov_1qcqhi23by.s[32]++;
 
 	var onPlayerReady = function onPlayerReady(player, options) {
-	  cov_5yfkrdepa.f[4]++;
-	  cov_5yfkrdepa.s[31]++;
+	  cov_1qcqhi23by.f[7]++;
+	  cov_1qcqhi23by.s[33]++;
 	  player.addClass('vjs-divide');
-	  cov_5yfkrdepa.s[32]++;
+	  cov_1qcqhi23by.s[34]++;
 	  renderProgressBar(player, options);
-	  cov_5yfkrdepa.s[33]++;
+	  cov_1qcqhi23by.s[35]++;
 	  styleDivides(player, options);
-	  cov_5yfkrdepa.s[34]++;
-	  testProgressGet(player);
+	  cov_1qcqhi23by.s[36]++;
+	  addDivide(player);
 	};
 
-	cov_5yfkrdepa.s[35]++;
+	cov_1qcqhi23by.s[37]++;
 
 	var divide = function divide(options) {
-	  var _this = this;
+	  var _this2 = this;
 
-	  cov_5yfkrdepa.f[5]++;
-	  cov_5yfkrdepa.s[36]++;
+	  cov_1qcqhi23by.f[8]++;
+	  cov_1qcqhi23by.s[38]++;
 	  this.ready(function () {
-	    cov_5yfkrdepa.f[6]++;
-	    cov_5yfkrdepa.s[37]++;
-	    onPlayerReady(_this, videojs.mergeOptions(defaults, options));
+	    cov_1qcqhi23by.f[9]++;
+	    cov_1qcqhi23by.s[39]++;
+	    onPlayerReady(_this2, videojs.mergeOptions(defaults, options));
 	  });
 	};
 
-	cov_5yfkrdepa.s[38]++;
+	cov_1qcqhi23by.s[40]++;
 	registerPlugin('divide', divide);
-	cov_5yfkrdepa.s[39]++;
+	cov_1qcqhi23by.s[41]++;
 	divide.VERSION = version;
 
 	var Player = videojs.getComponent('Player');

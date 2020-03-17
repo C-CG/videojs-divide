@@ -38,7 +38,7 @@ const renderProgressBar = (player, options) => {
     divide.id = 'd' + i.toString();
     divide.className = 'vjs-progress-bar-divide';
     divide.innerHTML = options.divides[i].pose;
-    divide.onclick = function () {
+    divide.onclick = function() {
       player.currentTime(options.divides[i].startTime);
     };
     ProgressBar.appendChild(divide);
@@ -57,24 +57,41 @@ const styleDivides = (player, options) => {
     const pos = options.divides[i].startTime * widthPerSecond;
     const width = options.divides[i].endTime - options.divides[i].startTime;
 
-    document.getElementById('d' + i.toString()).style.left = pos.toString() + 'px';
-    document.getElementById('d' + i.toString()).style.width = width.toString() + 'px';
+    document.getElementById('d' + i.toString()).style.left =
+      pos.toString() + 'px';
+    document.getElementById('d' + i.toString()).style.width =
+      width.toString() + 'px';
   }
 };
 
-const testProgressGet = (player) => {
-  const controls = player.controlBar;
-  const progress = controls.progressControl;
-  const seekBar = progress.seekBar;
-  seekBar.addChild('Button');
-  videojs.log('EL: ', seekBar.el());
+class Divide extends videojs.getComponent('ClickableComponent') {
+  constructor(player, options) {
+    super(player, options);
+    videojs.log('Divide INIT');
+  }
+  handleClick() {
+    videojs.log('Divide Clicked');
+  }
+  createEl() {
+    return videojs.dom.createEl('div', {
+      className: 'vjs-test-divide'
+    });
+  }
+}
+
+videojs.registerComponent('Divide', Divide);
+
+const addDivide = (player) => {
+  const progressBar = player.controlBar.progressControl.seekBar;
+
+  progressBar.addChild('Divide');
 };
 
 const onPlayerReady = (player, options) => {
   player.addClass('vjs-divide');
   renderProgressBar(player, options);
   styleDivides(player, options);
-  testProgressGet(player);
+  addDivide(player);
 };
 
 /**
@@ -89,7 +106,7 @@ const onPlayerReady = (player, options) => {
  * @param    {Object} [options={}]
  *           An object of options left to the plugin author to define.
  */
-const divide = function (options) {
+const divide = function(options) {
   this.ready(() => {
     onPlayerReady(this, videojs.mergeOptions(defaults, options));
   });
