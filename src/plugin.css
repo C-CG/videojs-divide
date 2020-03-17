@@ -37,47 +37,12 @@
     }
   }
 }
-
-.vjs-list {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  list-style: none;
-}
-
-.vjs-list-item {
-  cursor: pointer;
-  padding: 5px;
-  margin-bottom: 5px;
-  background: white;
-}
-
-.vjs-progress-bar {
-  position: absolute;
-  bottom: 0;
-  height: 20px;
-  width: 440px; /* Needs to read in from player */
-}
-
-.vjs-progress-bar-divide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  background: blue;
-  height: 20px;
-  cursor: pointer;
-}
-
+/* Container 30px High (adjust height/margin accordingly) */
 .vjs-test-divide {
   position: absolute;
+  margin: 10px 10px;
   top: 0px;
-  left: 0px;
-  width: 100px;
-  height: 100%;
+  height: 10px;
   background-color: red;
   cursor: pointer;
 }

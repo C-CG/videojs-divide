@@ -29,11 +29,12 @@ const registerPlugin = videojs.registerPlugin || videojs.plugin;
 class Divide extends videojs.getComponent('ClickableComponent') {
   constructor(player, options) {
     super(player, options);
-    // Get Options (when needed)
+    // Options
     this.id = options.id;
+    this.pose = options.pose;
   }
   handleClick() {
-    videojs.log('Divide Clicked');
+    videojs.log('Divide Clicked: ', String(this.pose));
   }
   createEl() {
     return videojs.dom.createEl('div', {
@@ -46,11 +47,11 @@ class Divide extends videojs.getComponent('ClickableComponent') {
 videojs.registerComponent('Divide', Divide);
 
 const renderDivides = (player, options) => {
-  const progressBar = player.controlBar.progressControl.seekBar;
+  const progressBar = player.controlBar.progressControl;
   // Looping the divides we got passed in
 
   for (let i = 0; i < options.divides.length; i++) {
-    progressBar.addChild('Divide', { id: String(i) });
+    progressBar.addChild('Divide', { id: String(i), pose: options.divides[i].pose });
   }
 };
 
@@ -58,6 +59,7 @@ const styleDivides = (options) => {
   // Needs to be: player.controlBar.progressControl.seekBar.clientWidth
   // Pass (player, options)
   const playerWidth = 217;
+  // Also need to get duration from the player
   const videoDuration = 596;
   // width in px per second
   const widthPerSecond = playerWidth / videoDuration;
