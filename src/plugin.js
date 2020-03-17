@@ -26,72 +26,57 @@ const registerPlugin = videojs.registerPlugin || videojs.plugin;
  *           A plain object containing options for the plugin.
  */
 
-const renderProgressBar = (player, options) => {
-  const videoElement = player.el();
-  const ProgressBar = document.createElement('div');
-
-  ProgressBar.className = 'vjs-progress-bar';
-  // Looping divides
-  for (let i = 0; i < options.divides.length; i++) {
-    const divide = document.createElement('div');
-
-    divide.id = 'd' + i.toString();
-    divide.className = 'vjs-progress-bar-divide';
-    divide.innerHTML = options.divides[i].pose;
-    divide.onclick = function() {
-      player.currentTime(options.divides[i].startTime);
-    };
-    ProgressBar.appendChild(divide);
-  }
-  videoElement.appendChild(ProgressBar);
-};
-
-const styleDivides = (player, options) => {
-  // 440
-  const playerWidth = player.width();
-  const videoDuration = 596;
-  // width in px per second (used)
-  const widthPerSecond = playerWidth / videoDuration;
-
-  for (let i = 0; i < options.divides.length; i++) {
-    const pos = options.divides[i].startTime * widthPerSecond;
-    const width = options.divides[i].endTime - options.divides[i].startTime;
-
-    document.getElementById('d' + i.toString()).style.left =
-      pos.toString() + 'px';
-    document.getElementById('d' + i.toString()).style.width =
-      width.toString() + 'px';
-  }
-};
-
 class Divide extends videojs.getComponent('ClickableComponent') {
   constructor(player, options) {
     super(player, options);
-    videojs.log('Divide INIT');
+    // Get Options (when needed)
+    this.id = options.id;
   }
   handleClick() {
     videojs.log('Divide Clicked');
   }
   createEl() {
     return videojs.dom.createEl('div', {
-      className: 'vjs-test-divide'
+      className: 'vjs-test-divide',
+      id: 'divide-' + this.id_
     });
   }
 }
 
 videojs.registerComponent('Divide', Divide);
 
-const addDivide = (player) => {
+const renderDivides = (player, options) => {
   const progressBar = player.controlBar.progressControl.seekBar;
+  // Looping the divides we got passed in
 
-  progressBar.addChild('Divide');
+  for (let i = 0; i < options.divides.length; i++) {
+    progressBar.addChild('Divide', { id: String(i) });
+  }
+};
+
+const styleDivides = (options) => {
+  // Needs to be: player.controlBar.progressControl.seekBar.clientWidth
+  // Pass (player, options)
+  const playerWidth = 217;
+  const videoDuration = 596;
+  // width in px per second
+  const widthPerSecond = playerWidth / videoDuration;
+
+  for (let i = 0; i < options.divides.length; i++) {
+    const pos = options.divides[i].startTime * widthPerSecond;
+    const width = (options.divides[i].endTime - options.divides[i].startTime) * widthPerSecond;
+
+    document.getElementById('divide-' + String(i)).style.left =
+      String(pos) + 'px';
+    document.getElementById('divide-' + String(i)).style.width =
+      String(width) + 'px';
+  }
 };
 
 const onPlayerReady = (player, options) => {
   player.addClass('vjs-divide');
-  renderProgressBar(player, options);
-  styleDivides(player, options);
-  addDivide(player);
+  renderDivides(player, options);
+  styleDivides(options);
 };
 
 /**

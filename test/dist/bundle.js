@@ -38,7 +38,7 @@
 
 	var cov_1qcqhi23by = function () {
 	  var path = "C:\\Users\\Calvin\\Documents\\Zing\\videojs-divide\\src\\plugin.js",
-	      hash = '56dffb69ea35420ecb146167e81fb7fd580e16cc',
+	      hash = 'e6e2fb859e658da8cc8338e37b0017c118cc80f5',
 	      Function = function () {}.constructor,
 	      global = new Function('return this')(),
 	      gcv = '__coverage__',
@@ -67,401 +67,271 @@
 	      },
 	      '2': {
 	        start: {
-	          line: 29,
-	          column: 26
+	          line: 31,
+	          column: 4
 	        },
 	        end: {
-	          line: 47,
-	          column: 1
+	          line: 31,
+	          column: 27
 	        }
 	      },
 	      '3': {
 	        start: {
-	          line: 30,
-	          column: 23
+	          line: 33,
+	          column: 4
 	        },
 	        end: {
-	          line: 30,
-	          column: 34
+	          line: 33,
+	          column: 25
 	        }
 	      },
 	      '4': {
 	        start: {
-	          line: 31,
-	          column: 22
+	          line: 36,
+	          column: 4
 	        },
 	        end: {
-	          line: 31,
-	          column: 51
+	          line: 36,
+	          column: 34
 	        }
 	      },
 	      '5': {
 	        start: {
-	          line: 33,
-	          column: 2
+	          line: 39,
+	          column: 4
 	        },
 	        end: {
-	          line: 33,
-	          column: 45
+	          line: 42,
+	          column: 7
 	        }
 	      },
 	      '6': {
 	        start: {
-	          line: 35,
-	          column: 2
+	          line: 46,
+	          column: 0
 	        },
 	        end: {
-	          line: 45,
-	          column: 3
+	          line: 46,
+	          column: 44
 	        }
 	      },
 	      '7': {
 	        start: {
-	          line: 36,
-	          column: 19
+	          line: 48,
+	          column: 22
 	        },
 	        end: {
-	          line: 36,
-	          column: 48
+	          line: 55,
+	          column: 1
 	        }
 	      },
 	      '8': {
 	        start: {
-	          line: 38,
-	          column: 4
+	          line: 49,
+	          column: 22
 	        },
 	        end: {
-	          line: 38,
-	          column: 35
+	          line: 49,
+	          column: 63
 	        }
 	      },
 	      '9': {
 	        start: {
-	          line: 39,
-	          column: 4
+	          line: 52,
+	          column: 2
 	        },
 	        end: {
-	          line: 39,
-	          column: 49
+	          line: 54,
+	          column: 3
 	        }
 	      },
 	      '10': {
 	        start: {
-	          line: 40,
+	          line: 53,
 	          column: 4
 	        },
 	        end: {
-	          line: 40,
-	          column: 47
+	          line: 53,
+	          column: 54
 	        }
 	      },
 	      '11': {
 	        start: {
-	          line: 41,
-	          column: 4
+	          line: 57,
+	          column: 21
 	        },
 	        end: {
-	          line: 43,
-	          column: 6
+	          line: 74,
+	          column: 1
 	        }
 	      },
 	      '12': {
 	        start: {
-	          line: 42,
-	          column: 6
+	          line: 60,
+	          column: 22
 	        },
 	        end: {
-	          line: 42,
-	          column: 55
+	          line: 60,
+	          column: 25
 	        }
 	      },
 	      '13': {
 	        start: {
-	          line: 44,
-	          column: 4
+	          line: 61,
+	          column: 24
 	        },
 	        end: {
-	          line: 44,
-	          column: 36
+	          line: 61,
+	          column: 27
 	        }
 	      },
 	      '14': {
 	        start: {
-	          line: 46,
-	          column: 2
+	          line: 63,
+	          column: 25
 	        },
 	        end: {
-	          line: 46,
-	          column: 40
+	          line: 63,
+	          column: 52
 	        }
 	      },
 	      '15': {
 	        start: {
-	          line: 49,
-	          column: 21
+	          line: 65,
+	          column: 2
 	        },
 	        end: {
-	          line: 65,
-	          column: 1
+	          line: 73,
+	          column: 3
 	        }
 	      },
 	      '16': {
 	        start: {
-	          line: 51,
-	          column: 22
+	          line: 66,
+	          column: 16
 	        },
 	        end: {
-	          line: 51,
-	          column: 36
+	          line: 66,
+	          column: 61
 	        }
 	      },
 	      '17': {
 	        start: {
-	          line: 52,
-	          column: 24
+	          line: 67,
+	          column: 18
 	        },
 	        end: {
-	          line: 52,
-	          column: 27
+	          line: 67,
+	          column: 94
 	        }
 	      },
 	      '18': {
 	        start: {
-	          line: 54,
-	          column: 25
+	          line: 69,
+	          column: 4
 	        },
 	        end: {
-	          line: 54,
-	          column: 52
+	          line: 70,
+	          column: 25
 	        }
 	      },
 	      '19': {
 	        start: {
-	          line: 56,
-	          column: 2
+	          line: 71,
+	          column: 4
 	        },
 	        end: {
-	          line: 64,
-	          column: 3
+	          line: 72,
+	          column: 27
 	        }
 	      },
 	      '20': {
 	        start: {
-	          line: 57,
-	          column: 16
+	          line: 76,
+	          column: 22
 	        },
 	        end: {
-	          line: 57,
-	          column: 61
+	          line: 80,
+	          column: 1
 	        }
 	      },
 	      '21': {
 	        start: {
-	          line: 58,
-	          column: 18
+	          line: 77,
+	          column: 2
 	        },
 	        end: {
-	          line: 58,
-	          column: 75
+	          line: 77,
+	          column: 32
 	        }
 	      },
 	      '22': {
 	        start: {
-	          line: 60,
-	          column: 4
+	          line: 78,
+	          column: 2
 	        },
 	        end: {
-	          line: 61,
-	          column: 28
+	          line: 78,
+	          column: 33
 	        }
 	      },
 	      '23': {
 	        start: {
-	          line: 62,
-	          column: 4
+	          line: 79,
+	          column: 2
 	        },
 	        end: {
-	          line: 63,
-	          column: 30
+	          line: 79,
+	          column: 24
 	        }
 	      },
 	      '24': {
 	        start: {
-	          line: 69,
-	          column: 4
+	          line: 94,
+	          column: 15
 	        },
 	        end: {
-	          line: 69,
-	          column: 27
+	          line: 98,
+	          column: 1
 	        }
 	      },
 	      '25': {
 	        start: {
-	          line: 70,
-	          column: 4
+	          line: 95,
+	          column: 2
 	        },
 	        end: {
-	          line: 70,
-	          column: 31
+	          line: 97,
+	          column: 5
 	        }
 	      },
 	      '26': {
 	        start: {
-	          line: 73,
+	          line: 96,
 	          column: 4
 	        },
 	        end: {
-	          line: 73,
-	          column: 34
+	          line: 96,
+	          column: 65
 	        }
 	      },
 	      '27': {
 	        start: {
-	          line: 76,
-	          column: 4
+	          line: 101,
+	          column: 0
 	        },
 	        end: {
-	          line: 78,
-	          column: 7
+	          line: 101,
+	          column: 33
 	        }
 	      },
 	      '28': {
 	        start: {
-	          line: 82,
+	          line: 104,
 	          column: 0
 	        },
 	        end: {
-	          line: 82,
-	          column: 44
-	        }
-	      },
-	      '29': {
-	        start: {
-	          line: 84,
-	          column: 18
-	        },
-	        end: {
-	          line: 88,
-	          column: 1
-	        }
-	      },
-	      '30': {
-	        start: {
-	          line: 85,
-	          column: 22
-	        },
-	        end: {
-	          line: 85,
-	          column: 63
-	        }
-	      },
-	      '31': {
-	        start: {
-	          line: 87,
-	          column: 2
-	        },
-	        end: {
-	          line: 87,
-	          column: 33
-	        }
-	      },
-	      '32': {
-	        start: {
-	          line: 90,
-	          column: 22
-	        },
-	        end: {
-	          line: 95,
-	          column: 1
-	        }
-	      },
-	      '33': {
-	        start: {
-	          line: 91,
-	          column: 2
-	        },
-	        end: {
-	          line: 91,
-	          column: 32
-	        }
-	      },
-	      '34': {
-	        start: {
-	          line: 92,
-	          column: 2
-	        },
-	        end: {
-	          line: 92,
-	          column: 37
-	        }
-	      },
-	      '35': {
-	        start: {
-	          line: 93,
-	          column: 2
-	        },
-	        end: {
-	          line: 93,
-	          column: 32
-	        }
-	      },
-	      '36': {
-	        start: {
-	          line: 94,
-	          column: 2
-	        },
-	        end: {
-	          line: 94,
-	          column: 20
-	        }
-	      },
-	      '37': {
-	        start: {
-	          line: 109,
-	          column: 15
-	        },
-	        end: {
-	          line: 113,
-	          column: 1
-	        }
-	      },
-	      '38': {
-	        start: {
-	          line: 110,
-	          column: 2
-	        },
-	        end: {
-	          line: 112,
-	          column: 5
-	        }
-	      },
-	      '39': {
-	        start: {
-	          line: 111,
-	          column: 4
-	        },
-	        end: {
-	          line: 111,
-	          column: 65
-	        }
-	      },
-	      '40': {
-	        start: {
-	          line: 116,
-	          column: 0
-	        },
-	        end: {
-	          line: 116,
-	          column: 33
-	        }
-	      },
-	      '41': {
-	        start: {
-	          line: 119,
-	          column: 0
-	        },
-	        end: {
-	          line: 119,
+	          line: 104,
 	          column: 25
 	        }
 	      }
@@ -471,241 +341,193 @@
 	        name: '(anonymous_0)',
 	        decl: {
 	          start: {
-	            line: 29,
-	            column: 26
+	            line: 30,
+	            column: 2
 	          },
 	          end: {
-	            line: 29,
-	            column: 27
+	            line: 30,
+	            column: 3
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 29,
-	            column: 47
+	            line: 30,
+	            column: 31
 	          },
 	          end: {
-	            line: 47,
-	            column: 1
+	            line: 34,
+	            column: 3
 	          }
 	        },
-	        line: 29
+	        line: 30
 	      },
 	      '1': {
 	        name: '(anonymous_1)',
 	        decl: {
 	          start: {
-	            line: 41,
-	            column: 21
+	            line: 35,
+	            column: 2
 	          },
 	          end: {
-	            line: 41,
-	            column: 22
+	            line: 35,
+	            column: 3
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 41,
-	            column: 32
+	            line: 35,
+	            column: 16
 	          },
 	          end: {
-	            line: 43,
-	            column: 5
+	            line: 37,
+	            column: 3
 	          }
 	        },
-	        line: 41
+	        line: 35
 	      },
 	      '2': {
 	        name: '(anonymous_2)',
 	        decl: {
 	          start: {
-	            line: 49,
-	            column: 21
+	            line: 38,
+	            column: 2
 	          },
 	          end: {
-	            line: 49,
-	            column: 22
+	            line: 38,
+	            column: 3
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 49,
-	            column: 42
+	            line: 38,
+	            column: 13
 	          },
 	          end: {
-	            line: 65,
-	            column: 1
+	            line: 43,
+	            column: 3
 	          }
 	        },
-	        line: 49
+	        line: 38
 	      },
 	      '3': {
 	        name: '(anonymous_3)',
 	        decl: {
 	          start: {
-	            line: 68,
-	            column: 2
-	          },
-	          end: {
-	            line: 68,
-	            column: 3
-	          }
-	        },
-	        loc: {
-	          start: {
-	            line: 68,
-	            column: 31
-	          },
-	          end: {
-	            line: 71,
-	            column: 3
-	          }
-	        },
-	        line: 68
-	      },
-	      '4': {
-	        name: '(anonymous_4)',
-	        decl: {
-	          start: {
-	            line: 72,
-	            column: 2
-	          },
-	          end: {
-	            line: 72,
-	            column: 3
-	          }
-	        },
-	        loc: {
-	          start: {
-	            line: 72,
-	            column: 16
-	          },
-	          end: {
-	            line: 74,
-	            column: 3
-	          }
-	        },
-	        line: 72
-	      },
-	      '5': {
-	        name: '(anonymous_5)',
-	        decl: {
-	          start: {
-	            line: 75,
-	            column: 2
-	          },
-	          end: {
-	            line: 75,
-	            column: 3
-	          }
-	        },
-	        loc: {
-	          start: {
-	            line: 75,
-	            column: 13
-	          },
-	          end: {
-	            line: 79,
-	            column: 3
-	          }
-	        },
-	        line: 75
-	      },
-	      '6': {
-	        name: '(anonymous_6)',
-	        decl: {
-	          start: {
-	            line: 84,
-	            column: 18
-	          },
-	          end: {
-	            line: 84,
-	            column: 19
-	          }
-	        },
-	        loc: {
-	          start: {
-	            line: 84,
-	            column: 30
-	          },
-	          end: {
-	            line: 88,
-	            column: 1
-	          }
-	        },
-	        line: 84
-	      },
-	      '7': {
-	        name: '(anonymous_7)',
-	        decl: {
-	          start: {
-	            line: 90,
+	            line: 48,
 	            column: 22
 	          },
 	          end: {
-	            line: 90,
+	            line: 48,
 	            column: 23
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 90,
+	            line: 48,
 	            column: 43
 	          },
 	          end: {
-	            line: 95,
+	            line: 55,
 	            column: 1
 	          }
 	        },
-	        line: 90
+	        line: 48
 	      },
-	      '8': {
-	        name: '(anonymous_8)',
+	      '4': {
+	        name: '(anonymous_4)',
 	        decl: {
 	          start: {
-	            line: 109,
+	            line: 57,
+	            column: 21
+	          },
+	          end: {
+	            line: 57,
+	            column: 22
+	          }
+	        },
+	        loc: {
+	          start: {
+	            line: 57,
+	            column: 34
+	          },
+	          end: {
+	            line: 74,
+	            column: 1
+	          }
+	        },
+	        line: 57
+	      },
+	      '5': {
+	        name: '(anonymous_5)',
+	        decl: {
+	          start: {
+	            line: 76,
+	            column: 22
+	          },
+	          end: {
+	            line: 76,
+	            column: 23
+	          }
+	        },
+	        loc: {
+	          start: {
+	            line: 76,
+	            column: 43
+	          },
+	          end: {
+	            line: 80,
+	            column: 1
+	          }
+	        },
+	        line: 76
+	      },
+	      '6': {
+	        name: '(anonymous_6)',
+	        decl: {
+	          start: {
+	            line: 94,
 	            column: 15
 	          },
 	          end: {
-	            line: 109,
+	            line: 94,
 	            column: 16
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 109,
+	            line: 94,
 	            column: 33
 	          },
 	          end: {
-	            line: 113,
+	            line: 98,
 	            column: 1
 	          }
 	        },
-	        line: 109
+	        line: 94
 	      },
-	      '9': {
-	        name: '(anonymous_9)',
+	      '7': {
+	        name: '(anonymous_7)',
 	        decl: {
 	          start: {
-	            line: 110,
+	            line: 95,
 	            column: 13
 	          },
 	          end: {
-	            line: 110,
+	            line: 95,
 	            column: 14
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 110,
+	            line: 95,
 	            column: 19
 	          },
 	          end: {
-	            line: 112,
+	            line: 97,
 	            column: 3
 	          }
 	        },
-	        line: 110
+	        line: 95
 	      }
 	    },
 	    branchMap: {
@@ -772,20 +594,7 @@
 	      '25': 0,
 	      '26': 0,
 	      '27': 0,
-	      '28': 0,
-	      '29': 0,
-	      '30': 0,
-	      '31': 0,
-	      '32': 0,
-	      '33': 0,
-	      '34': 0,
-	      '35': 0,
-	      '36': 0,
-	      '37': 0,
-	      '38': 0,
-	      '39': 0,
-	      '40': 0,
-	      '41': 0
+	      '28': 0
 	    },
 	    f: {
 	      '0': 0,
@@ -795,9 +604,7 @@
 	      '4': 0,
 	      '5': 0,
 	      '6': 0,
-	      '7': 0,
-	      '8': 0,
-	      '9': 0
+	      '7': 0
 	    },
 	    b: {
 	      '0': [0, 0]
@@ -817,62 +624,6 @@
 	  divides: []
 	});
 	var registerPlugin = (cov_1qcqhi23by.s[1]++, (cov_1qcqhi23by.b[0][0]++, videojs.registerPlugin) || (cov_1qcqhi23by.b[0][1]++, videojs.plugin));
-	cov_1qcqhi23by.s[2]++;
-
-	var renderProgressBar = function renderProgressBar(player, options) {
-	  cov_1qcqhi23by.f[0]++;
-	  var videoElement = (cov_1qcqhi23by.s[3]++, player.el());
-	  var ProgressBar = (cov_1qcqhi23by.s[4]++, document_1.createElement('div'));
-	  cov_1qcqhi23by.s[5]++;
-	  ProgressBar.className = 'vjs-progress-bar';
-	  cov_1qcqhi23by.s[6]++;
-
-	  var _loop = function _loop(i) {
-	    var divide = (cov_1qcqhi23by.s[7]++, document_1.createElement('div'));
-	    cov_1qcqhi23by.s[8]++;
-	    divide.id = 'd' + i.toString();
-	    cov_1qcqhi23by.s[9]++;
-	    divide.className = 'vjs-progress-bar-divide';
-	    cov_1qcqhi23by.s[10]++;
-	    divide.innerHTML = options.divides[i].pose;
-	    cov_1qcqhi23by.s[11]++;
-
-	    divide.onclick = function () {
-	      cov_1qcqhi23by.f[1]++;
-	      cov_1qcqhi23by.s[12]++;
-	      player.currentTime(options.divides[i].startTime);
-	    };
-
-	    cov_1qcqhi23by.s[13]++;
-	    ProgressBar.appendChild(divide);
-	  };
-
-	  for (var i = 0; i < options.divides.length; i++) {
-	    _loop(i);
-	  }
-
-	  cov_1qcqhi23by.s[14]++;
-	  videoElement.appendChild(ProgressBar);
-	};
-
-	cov_1qcqhi23by.s[15]++;
-
-	var styleDivides = function styleDivides(player, options) {
-	  cov_1qcqhi23by.f[2]++;
-	  var playerWidth = (cov_1qcqhi23by.s[16]++, player.width());
-	  var videoDuration = (cov_1qcqhi23by.s[17]++, 596);
-	  var widthPerSecond = (cov_1qcqhi23by.s[18]++, playerWidth / videoDuration);
-	  cov_1qcqhi23by.s[19]++;
-
-	  for (var i = 0; i < options.divides.length; i++) {
-	    var pos = (cov_1qcqhi23by.s[20]++, options.divides[i].startTime * widthPerSecond);
-	    var width = (cov_1qcqhi23by.s[21]++, options.divides[i].endTime - options.divides[i].startTime);
-	    cov_1qcqhi23by.s[22]++;
-	    document_1.getElementById('d' + i.toString()).style.left = pos.toString() + 'px';
-	    cov_1qcqhi23by.s[23]++;
-	    document_1.getElementById('d' + i.toString()).style.width = width.toString() + 'px';
-	  }
-	};
 
 	var Divide =
 	/*#__PURE__*/
@@ -882,75 +633,99 @@
 	  function Divide(player, options) {
 	    var _this;
 
-	    cov_1qcqhi23by.f[3]++;
-	    cov_1qcqhi23by.s[24]++;
+	    cov_1qcqhi23by.f[0]++;
+	    cov_1qcqhi23by.s[2]++;
 	    _this = _videojs$getComponent.call(this, player, options) || this;
-	    cov_1qcqhi23by.s[25]++;
-	    videojs.log('Divide INIT');
+	    cov_1qcqhi23by.s[3]++;
+	    _this.id = options.id;
 	    return _this;
 	  }
 
 	  var _proto = Divide.prototype;
 
 	  _proto.handleClick = function handleClick() {
-	    cov_1qcqhi23by.f[4]++;
-	    cov_1qcqhi23by.s[26]++;
+	    cov_1qcqhi23by.f[1]++;
+	    cov_1qcqhi23by.s[4]++;
 	    videojs.log('Divide Clicked');
 	  };
 
 	  _proto.createEl = function createEl() {
-	    cov_1qcqhi23by.f[5]++;
-	    cov_1qcqhi23by.s[27]++;
+	    cov_1qcqhi23by.f[2]++;
+	    cov_1qcqhi23by.s[5]++;
 	    return videojs.dom.createEl('div', {
-	      className: 'vjs-test-divide'
+	      className: 'vjs-test-divide',
+	      id: 'divide-' + this.id_
 	    });
 	  };
 
 	  return Divide;
 	}(videojs.getComponent('ClickableComponent'));
 
-	cov_1qcqhi23by.s[28]++;
+	cov_1qcqhi23by.s[6]++;
 	videojs.registerComponent('Divide', Divide);
-	cov_1qcqhi23by.s[29]++;
+	cov_1qcqhi23by.s[7]++;
 
-	var addDivide = function addDivide(player) {
-	  cov_1qcqhi23by.f[6]++;
-	  var progressBar = (cov_1qcqhi23by.s[30]++, player.controlBar.progressControl.seekBar);
-	  cov_1qcqhi23by.s[31]++;
-	  progressBar.addChild('Divide');
+	var renderDivides = function renderDivides(player, options) {
+	  cov_1qcqhi23by.f[3]++;
+	  var progressBar = (cov_1qcqhi23by.s[8]++, player.controlBar.progressControl.seekBar);
+	  cov_1qcqhi23by.s[9]++;
+
+	  for (var i = 0; i < options.divides.length; i++) {
+	    cov_1qcqhi23by.s[10]++;
+	    progressBar.addChild('Divide', {
+	      id: String(i)
+	    });
+	  }
 	};
 
-	cov_1qcqhi23by.s[32]++;
+	cov_1qcqhi23by.s[11]++;
+
+	var styleDivides = function styleDivides(options) {
+	  cov_1qcqhi23by.f[4]++;
+	  var playerWidth = (cov_1qcqhi23by.s[12]++, 217);
+	  var videoDuration = (cov_1qcqhi23by.s[13]++, 596);
+	  var widthPerSecond = (cov_1qcqhi23by.s[14]++, playerWidth / videoDuration);
+	  cov_1qcqhi23by.s[15]++;
+
+	  for (var i = 0; i < options.divides.length; i++) {
+	    var pos = (cov_1qcqhi23by.s[16]++, options.divides[i].startTime * widthPerSecond);
+	    var width = (cov_1qcqhi23by.s[17]++, (options.divides[i].endTime - options.divides[i].startTime) * widthPerSecond);
+	    cov_1qcqhi23by.s[18]++;
+	    document_1.getElementById('divide-' + String(i)).style.left = String(pos) + 'px';
+	    cov_1qcqhi23by.s[19]++;
+	    document_1.getElementById('divide-' + String(i)).style.width = String(width) + 'px';
+	  }
+	};
+
+	cov_1qcqhi23by.s[20]++;
 
 	var onPlayerReady = function onPlayerReady(player, options) {
-	  cov_1qcqhi23by.f[7]++;
-	  cov_1qcqhi23by.s[33]++;
+	  cov_1qcqhi23by.f[5]++;
+	  cov_1qcqhi23by.s[21]++;
 	  player.addClass('vjs-divide');
-	  cov_1qcqhi23by.s[34]++;
-	  renderProgressBar(player, options);
-	  cov_1qcqhi23by.s[35]++;
-	  styleDivides(player, options);
-	  cov_1qcqhi23by.s[36]++;
-	  addDivide(player);
+	  cov_1qcqhi23by.s[22]++;
+	  renderDivides(player, options);
+	  cov_1qcqhi23by.s[23]++;
+	  styleDivides(options);
 	};
 
-	cov_1qcqhi23by.s[37]++;
+	cov_1qcqhi23by.s[24]++;
 
 	var divide = function divide(options) {
 	  var _this2 = this;
 
-	  cov_1qcqhi23by.f[8]++;
-	  cov_1qcqhi23by.s[38]++;
+	  cov_1qcqhi23by.f[6]++;
+	  cov_1qcqhi23by.s[25]++;
 	  this.ready(function () {
-	    cov_1qcqhi23by.f[9]++;
-	    cov_1qcqhi23by.s[39]++;
+	    cov_1qcqhi23by.f[7]++;
+	    cov_1qcqhi23by.s[26]++;
 	    onPlayerReady(_this2, videojs.mergeOptions(defaults, options));
 	  });
 	};
 
-	cov_1qcqhi23by.s[40]++;
+	cov_1qcqhi23by.s[27]++;
 	registerPlugin('divide', divide);
-	cov_1qcqhi23by.s[41]++;
+	cov_1qcqhi23by.s[28]++;
 	divide.VERSION = version;
 
 	var Player = videojs.getComponent('Player');
