@@ -38,7 +38,7 @@
 
 	var cov_1qcqhi23by = function () {
 	  var path = "C:\\Users\\Calvin\\Documents\\Zing\\videojs-divide\\src\\plugin.js",
-	      hash = '143a9e652bb2226e94cdef6fc3f3df7967dc29d5',
+	      hash = '876740654ff1804cb0f49226833a252f76bd55c2',
 	      Function = function () {}.constructor,
 	      global = new Function('return this')(),
 	      gcv = '__coverage__',
@@ -182,7 +182,7 @@
 	        },
 	        end: {
 	          line: 61,
-	          column: 25
+	          column: 79
 	        }
 	      },
 	      '14': {
@@ -192,7 +192,7 @@
 	        },
 	        end: {
 	          line: 63,
-	          column: 27
+	          column: 46
 	        }
 	      },
 	      '15': {
@@ -261,7 +261,7 @@
 	          column: 22
 	        },
 	        end: {
-	          line: 82,
+	          line: 80,
 	          column: 1
 	        }
 	      },
@@ -277,71 +277,81 @@
 	      },
 	      '23': {
 	        start: {
-	          line: 80,
-	          column: 2
+	          line: 94,
+	          column: 15
 	        },
 	        end: {
-	          line: 80,
-	          column: 33
+	          line: 102,
+	          column: 1
 	        }
 	      },
 	      '24': {
 	        start: {
-	          line: 81,
+	          line: 95,
 	          column: 2
 	        },
 	        end: {
-	          line: 81,
-	          column: 24
+	          line: 97,
+	          column: 5
 	        }
 	      },
 	      '25': {
 	        start: {
 	          line: 96,
-	          column: 15
+	          column: 4
 	        },
 	        end: {
-	          line: 100,
-	          column: 1
+	          line: 96,
+	          column: 65
 	        }
 	      },
 	      '26': {
 	        start: {
-	          line: 97,
+	          line: 98,
 	          column: 2
 	        },
 	        end: {
-	          line: 99,
+	          line: 101,
 	          column: 5
 	        }
 	      },
 	      '27': {
 	        start: {
-	          line: 98,
+	          line: 99,
 	          column: 4
 	        },
 	        end: {
-	          line: 98,
-	          column: 65
+	          line: 99,
+	          column: 33
 	        }
 	      },
 	      '28': {
 	        start: {
-	          line: 103,
-	          column: 0
+	          line: 100,
+	          column: 4
 	        },
 	        end: {
-	          line: 103,
-	          column: 33
+	          line: 100,
+	          column: 32
 	        }
 	      },
 	      '29': {
 	        start: {
-	          line: 106,
+	          line: 105,
 	          column: 0
 	        },
 	        end: {
-	          line: 106,
+	          line: 105,
+	          column: 33
+	        }
+	      },
+	      '30': {
+	        start: {
+	          line: 108,
+	          column: 0
+	        },
+	        end: {
+	          line: 108,
 	          column: 25
 	        }
 	      }
@@ -458,7 +468,7 @@
 	        loc: {
 	          start: {
 	            line: 58,
-	            column: 34
+	            column: 42
 	          },
 	          end: {
 	            line: 76,
@@ -485,7 +495,7 @@
 	            column: 43
 	          },
 	          end: {
-	            line: 82,
+	            line: 80,
 	            column: 1
 	          }
 	        },
@@ -495,49 +505,73 @@
 	        name: '(anonymous_6)',
 	        decl: {
 	          start: {
-	            line: 96,
+	            line: 94,
 	            column: 15
 	          },
 	          end: {
-	            line: 96,
+	            line: 94,
 	            column: 16
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 96,
-	            column: 33
+	            line: 94,
+	            column: 34
 	          },
 	          end: {
-	            line: 100,
+	            line: 102,
 	            column: 1
 	          }
 	        },
-	        line: 96
+	        line: 94
 	      },
 	      '7': {
 	        name: '(anonymous_7)',
 	        decl: {
 	          start: {
-	            line: 97,
+	            line: 95,
 	            column: 13
 	          },
 	          end: {
-	            line: 97,
+	            line: 95,
 	            column: 14
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 97,
+	            line: 95,
 	            column: 19
 	          },
 	          end: {
-	            line: 99,
+	            line: 97,
 	            column: 3
 	          }
 	        },
-	        line: 97
+	        line: 95
+	      },
+	      '8': {
+	        name: '(anonymous_8)',
+	        decl: {
+	          start: {
+	            line: 98,
+	            column: 21
+	          },
+	          end: {
+	            line: 98,
+	            column: 22
+	          }
+	        },
+	        loc: {
+	          start: {
+	            line: 98,
+	            column: 33
+	          },
+	          end: {
+	            line: 101,
+	            column: 3
+	          }
+	        },
+	        line: 98
 	      }
 	    },
 	    branchMap: {
@@ -605,7 +639,8 @@
 	      '26': 0,
 	      '27': 0,
 	      '28': 0,
-	      '29': 0
+	      '29': 0,
+	      '30': 0
 	    },
 	    f: {
 	      '0': 0,
@@ -615,7 +650,8 @@
 	      '4': 0,
 	      '5': 0,
 	      '6': 0,
-	      '7': 0
+	      '7': 0,
+	      '8': 0
 	    },
 	    b: {
 	      '0': [0, 0]
@@ -694,10 +730,10 @@
 
 	cov_1qcqhi23by.s[12]++;
 
-	var styleDivides = function styleDivides(options) {
+	var styleDivides = function styleDivides(player, options) {
 	  cov_1qcqhi23by.f[4]++;
-	  var playerWidth = (cov_1qcqhi23by.s[13]++, 217);
-	  var videoDuration = (cov_1qcqhi23by.s[14]++, 596);
+	  var playerWidth = (cov_1qcqhi23by.s[13]++, player.controlBar.progressControl.seekBar.el_.clientWidth);
+	  var videoDuration = (cov_1qcqhi23by.s[14]++, player.cache_.duration);
 	  var widthPerSecond = (cov_1qcqhi23by.s[15]++, playerWidth / videoDuration);
 	  cov_1qcqhi23by.s[16]++;
 
@@ -717,29 +753,33 @@
 	  cov_1qcqhi23by.f[5]++;
 	  cov_1qcqhi23by.s[22]++;
 	  player.addClass('vjs-divide');
-	  cov_1qcqhi23by.s[23]++;
-	  renderDivides(player, options);
-	  cov_1qcqhi23by.s[24]++;
-	  styleDivides(options);
 	};
 
-	cov_1qcqhi23by.s[25]++;
+	cov_1qcqhi23by.s[23]++;
 
 	var divide = function divide(options) {
 	  var _this2 = this;
 
 	  cov_1qcqhi23by.f[6]++;
-	  cov_1qcqhi23by.s[26]++;
+	  cov_1qcqhi23by.s[24]++;
 	  this.ready(function () {
 	    cov_1qcqhi23by.f[7]++;
-	    cov_1qcqhi23by.s[27]++;
+	    cov_1qcqhi23by.s[25]++;
 	    onPlayerReady(_this2, videojs.mergeOptions(defaults, options));
+	  });
+	  cov_1qcqhi23by.s[26]++;
+	  this.on('playing', function () {
+	    cov_1qcqhi23by.f[8]++;
+	    cov_1qcqhi23by.s[27]++;
+	    renderDivides(this, options);
+	    cov_1qcqhi23by.s[28]++;
+	    styleDivides(this, options);
 	  });
 	};
 
-	cov_1qcqhi23by.s[28]++;
-	registerPlugin('divide', divide);
 	cov_1qcqhi23by.s[29]++;
+	registerPlugin('divide', divide);
+	cov_1qcqhi23by.s[30]++;
 	divide.VERSION = version;
 
 	var Player = videojs.getComponent('Player');

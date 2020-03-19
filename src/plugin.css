@@ -40,9 +40,13 @@
 /* Container 30px High (adjust height/margin accordingly) */
 .vjs-test-divide {
   position: absolute;
-  margin: 10px 10px;
+  margin: 13.5px 10px;
   top: 0px;
-  height: 10px;
+  height: 3px;
   background-color: red;
   cursor: pointer;
+}
+
+.vjs-test-divide:hover {
+  background-color: blue;
 }

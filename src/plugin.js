@@ -55,12 +55,12 @@ const renderDivides = (player, options) => {
   }
 };
 
-const styleDivides = (options) => {
+const styleDivides = (player, options) => {
   // Needs to be: player.controlBar.progressControl.seekBar.clientWidth
   // Pass (player, options)
-  const playerWidth = 217;
+  const playerWidth = player.controlBar.progressControl.seekBar.el_.clientWidth;
   // Also need to get duration from the player
-  const videoDuration = 596;
+  const videoDuration = player.cache_.duration;
   // width in px per second
   const widthPerSecond = playerWidth / videoDuration;
 
@@ -77,8 +77,6 @@ const styleDivides = (options) => {
 
 const onPlayerReady = (player, options) => {
   player.addClass('vjs-divide');
-  renderDivides(player, options);
-  styleDivides(options);
 };
 
 /**
@@ -93,9 +91,13 @@ const onPlayerReady = (player, options) => {
  * @param    {Object} [options={}]
  *           An object of options left to the plugin author to define.
  */
-const divide = function(options) {
+const divide = function (options) {
   this.ready(() => {
     onPlayerReady(this, videojs.mergeOptions(defaults, options));
+  });
+  this.on('playing', function () {
+    renderDivides(this, options);
+    styleDivides(this, options);
   });
 };
 
