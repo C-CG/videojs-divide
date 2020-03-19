@@ -56,8 +56,6 @@ const renderDivides = (player, options) => {
 };
 
 const styleDivides = (player, options) => {
-  // Needs to be: player.controlBar.progressControl.seekBar.clientWidth
-  // Pass (player, options)
   const playerWidth = player.controlBar.progressControl.seekBar.el_.clientWidth;
   // Also need to get duration from the player
   const videoDuration = player.cache_.duration;
@@ -91,13 +89,25 @@ const onPlayerReady = (player, options) => {
  * @param    {Object} [options={}]
  *           An object of options left to the plugin author to define.
  */
-const divide = function (options) {
+const divide = function(options) {
   this.ready(() => {
     onPlayerReady(this, videojs.mergeOptions(defaults, options));
   });
-  this.on('playing', function () {
+  this.on('playing', function() {
     renderDivides(this, options);
     styleDivides(this, options);
+  });
+  const seekBar = this.controlBar.progressControl.seekBar;
+
+  seekBar.on('mousemove', function() {
+    // Need to get the tooltip element and edit it to have the pose name also
+    // Then done
+    const mouseTimeDisplay = seekBar.mouseTimeDisplay;
+    const tooltip = mouseTimeDisplay.timeTooltip.el_;
+    const tooltipValue = tooltip.innerText;
+
+    videojs.log('Seek Position: ', parseFloat(mouseTimeDisplay.el_.style.left));
+    videojs.log('Tooltip Value: ', tooltipValue);
   });
 };
 

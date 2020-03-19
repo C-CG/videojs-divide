@@ -38,7 +38,7 @@
 
 	var cov_1qcqhi23by = function () {
 	  var path = "C:\\Users\\Calvin\\Documents\\Zing\\videojs-divide\\src\\plugin.js",
-	      hash = '876740654ff1804cb0f49226833a252f76bd55c2',
+	      hash = '94b9c8427bd292a65ed609402c5fbc8378e46fbe',
 	      Function = function () {}.constructor,
 	      global = new Function('return this')(),
 	      gcv = '__coverage__',
@@ -171,187 +171,257 @@
 	          column: 21
 	        },
 	        end: {
-	          line: 76,
+	          line: 74,
 	          column: 1
 	        }
 	      },
 	      '13': {
 	        start: {
-	          line: 61,
+	          line: 59,
 	          column: 22
 	        },
 	        end: {
-	          line: 61,
+	          line: 59,
 	          column: 79
 	        }
 	      },
 	      '14': {
 	        start: {
-	          line: 63,
+	          line: 61,
 	          column: 24
 	        },
 	        end: {
-	          line: 63,
+	          line: 61,
 	          column: 46
 	        }
 	      },
 	      '15': {
 	        start: {
-	          line: 65,
+	          line: 63,
 	          column: 25
 	        },
 	        end: {
-	          line: 65,
+	          line: 63,
 	          column: 52
 	        }
 	      },
 	      '16': {
 	        start: {
-	          line: 67,
+	          line: 65,
 	          column: 2
 	        },
 	        end: {
-	          line: 75,
+	          line: 73,
 	          column: 3
 	        }
 	      },
 	      '17': {
 	        start: {
-	          line: 68,
+	          line: 66,
 	          column: 16
 	        },
 	        end: {
-	          line: 68,
+	          line: 66,
 	          column: 61
 	        }
 	      },
 	      '18': {
 	        start: {
-	          line: 69,
+	          line: 67,
 	          column: 18
 	        },
 	        end: {
-	          line: 69,
+	          line: 67,
 	          column: 94
 	        }
 	      },
 	      '19': {
+	        start: {
+	          line: 69,
+	          column: 4
+	        },
+	        end: {
+	          line: 70,
+	          column: 25
+	        }
+	      },
+	      '20': {
 	        start: {
 	          line: 71,
 	          column: 4
 	        },
 	        end: {
 	          line: 72,
-	          column: 25
-	        }
-	      },
-	      '20': {
-	        start: {
-	          line: 73,
-	          column: 4
-	        },
-	        end: {
-	          line: 74,
 	          column: 27
 	        }
 	      },
 	      '21': {
 	        start: {
-	          line: 78,
+	          line: 76,
 	          column: 22
 	        },
 	        end: {
-	          line: 80,
+	          line: 78,
 	          column: 1
 	        }
 	      },
 	      '22': {
 	        start: {
-	          line: 79,
+	          line: 77,
 	          column: 2
 	        },
 	        end: {
-	          line: 79,
+	          line: 77,
 	          column: 32
 	        }
 	      },
 	      '23': {
 	        start: {
-	          line: 94,
+	          line: 92,
 	          column: 15
 	        },
 	        end: {
-	          line: 102,
+	          line: 112,
 	          column: 1
 	        }
 	      },
 	      '24': {
 	        start: {
-	          line: 95,
+	          line: 93,
 	          column: 2
 	        },
 	        end: {
-	          line: 97,
+	          line: 95,
 	          column: 5
 	        }
 	      },
 	      '25': {
 	        start: {
-	          line: 96,
+	          line: 94,
 	          column: 4
 	        },
 	        end: {
-	          line: 96,
+	          line: 94,
 	          column: 65
 	        }
 	      },
 	      '26': {
 	        start: {
-	          line: 98,
+	          line: 96,
 	          column: 2
 	        },
 	        end: {
-	          line: 101,
+	          line: 99,
 	          column: 5
 	        }
 	      },
 	      '27': {
 	        start: {
-	          line: 99,
+	          line: 97,
 	          column: 4
 	        },
 	        end: {
-	          line: 99,
+	          line: 97,
 	          column: 33
 	        }
 	      },
 	      '28': {
 	        start: {
-	          line: 100,
+	          line: 98,
 	          column: 4
 	        },
 	        end: {
-	          line: 100,
+	          line: 98,
 	          column: 32
 	        }
 	      },
 	      '29': {
 	        start: {
-	          line: 105,
-	          column: 0
+	          line: 100,
+	          column: 18
 	        },
 	        end: {
-	          line: 105,
-	          column: 33
+	          line: 100,
+	          column: 57
 	        }
 	      },
 	      '30': {
 	        start: {
+	          line: 102,
+	          column: 2
+	        },
+	        end: {
+	          line: 111,
+	          column: 4
+	        }
+	      },
+	      '31': {
+	        start: {
+	          line: 105,
+	          column: 29
+	        },
+	        end: {
+	          line: 105,
+	          column: 53
+	        }
+	      },
+	      '32': {
+	        start: {
+	          line: 106,
+	          column: 20
+	        },
+	        end: {
+	          line: 106,
+	          column: 52
+	        }
+	      },
+	      '33': {
+	        start: {
+	          line: 107,
+	          column: 25
+	        },
+	        end: {
+	          line: 107,
+	          column: 42
+	        }
+	      },
+	      '34': {
+	        start: {
 	          line: 108,
-	          column: 0
+	          column: 4
 	        },
 	        end: {
 	          line: 108,
+	          column: 80
+	        }
+	      },
+	      '35': {
+	        start: {
+	          line: 109,
+	          column: 4
+	        },
+	        end: {
+	          line: 109,
+	          column: 48
+	        }
+	      },
+	      '36': {
+	        start: {
+	          line: 115,
+	          column: 0
+	        },
+	        end: {
+	          line: 115,
+	          column: 33
+	        }
+	      },
+	      '37': {
+	        start: {
+	          line: 118,
+	          column: 0
+	        },
+	        end: {
+	          line: 118,
 	          column: 25
 	        }
 	      }
@@ -471,7 +541,7 @@
 	            column: 42
 	          },
 	          end: {
-	            line: 76,
+	            line: 74,
 	            column: 1
 	          }
 	        },
@@ -481,97 +551,121 @@
 	        name: '(anonymous_5)',
 	        decl: {
 	          start: {
-	            line: 78,
+	            line: 76,
 	            column: 22
 	          },
 	          end: {
-	            line: 78,
+	            line: 76,
 	            column: 23
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 78,
+	            line: 76,
 	            column: 43
 	          },
 	          end: {
-	            line: 80,
+	            line: 78,
 	            column: 1
 	          }
 	        },
-	        line: 78
+	        line: 76
 	      },
 	      '6': {
 	        name: '(anonymous_6)',
 	        decl: {
 	          start: {
-	            line: 94,
+	            line: 92,
 	            column: 15
 	          },
 	          end: {
-	            line: 94,
+	            line: 92,
 	            column: 16
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 94,
+	            line: 92,
 	            column: 34
 	          },
 	          end: {
-	            line: 102,
+	            line: 112,
 	            column: 1
 	          }
 	        },
-	        line: 94
+	        line: 92
 	      },
 	      '7': {
 	        name: '(anonymous_7)',
 	        decl: {
 	          start: {
-	            line: 95,
+	            line: 93,
 	            column: 13
 	          },
 	          end: {
-	            line: 95,
+	            line: 93,
 	            column: 14
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 95,
+	            line: 93,
 	            column: 19
 	          },
 	          end: {
-	            line: 97,
+	            line: 95,
 	            column: 3
 	          }
 	        },
-	        line: 95
+	        line: 93
 	      },
 	      '8': {
 	        name: '(anonymous_8)',
 	        decl: {
 	          start: {
-	            line: 98,
+	            line: 96,
 	            column: 21
 	          },
 	          end: {
-	            line: 98,
+	            line: 96,
 	            column: 22
 	          }
 	        },
 	        loc: {
 	          start: {
-	            line: 98,
+	            line: 96,
 	            column: 33
 	          },
 	          end: {
-	            line: 101,
+	            line: 99,
 	            column: 3
 	          }
 	        },
-	        line: 98
+	        line: 96
+	      },
+	      '9': {
+	        name: '(anonymous_9)',
+	        decl: {
+	          start: {
+	            line: 102,
+	            column: 26
+	          },
+	          end: {
+	            line: 102,
+	            column: 27
+	          }
+	        },
+	        loc: {
+	          start: {
+	            line: 102,
+	            column: 38
+	          },
+	          end: {
+	            line: 111,
+	            column: 3
+	          }
+	        },
+	        line: 102
 	      }
 	    },
 	    branchMap: {
@@ -640,7 +734,14 @@
 	      '27': 0,
 	      '28': 0,
 	      '29': 0,
-	      '30': 0
+	      '30': 0,
+	      '31': 0,
+	      '32': 0,
+	      '33': 0,
+	      '34': 0,
+	      '35': 0,
+	      '36': 0,
+	      '37': 0
 	    },
 	    f: {
 	      '0': 0,
@@ -651,7 +752,8 @@
 	      '5': 0,
 	      '6': 0,
 	      '7': 0,
-	      '8': 0
+	      '8': 0,
+	      '9': 0
 	    },
 	    b: {
 	      '0': [0, 0]
@@ -775,11 +877,23 @@
 	    cov_1qcqhi23by.s[28]++;
 	    styleDivides(this, options);
 	  });
+	  var seekBar = (cov_1qcqhi23by.s[29]++, this.controlBar.progressControl.seekBar);
+	  cov_1qcqhi23by.s[30]++;
+	  seekBar.on('mousemove', function () {
+	    cov_1qcqhi23by.f[9]++;
+	    var mouseTimeDisplay = (cov_1qcqhi23by.s[31]++, seekBar.mouseTimeDisplay);
+	    var tooltip = (cov_1qcqhi23by.s[32]++, mouseTimeDisplay.timeTooltip.el_);
+	    var tooltipValue = (cov_1qcqhi23by.s[33]++, tooltip.innerText);
+	    cov_1qcqhi23by.s[34]++;
+	    videojs.log('Seek Position: ', parseFloat(mouseTimeDisplay.el_.style.left));
+	    cov_1qcqhi23by.s[35]++;
+	    videojs.log('Tooltip Value: ', tooltipValue);
+	  });
 	};
 
-	cov_1qcqhi23by.s[29]++;
+	cov_1qcqhi23by.s[36]++;
 	registerPlugin('divide', divide);
-	cov_1qcqhi23by.s[30]++;
+	cov_1qcqhi23by.s[37]++;
 	divide.VERSION = version;
 
 	var Player = videojs.getComponent('Player');
