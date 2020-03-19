@@ -89,25 +89,61 @@ const onPlayerReady = (player, options) => {
  * @param    {Object} [options={}]
  *           An object of options left to the plugin author to define.
  */
-const divide = function(options) {
+const divide = function (options) {
   this.ready(() => {
     onPlayerReady(this, videojs.mergeOptions(defaults, options));
   });
-  this.on('playing', function() {
+  this.on('playing', function () {
     renderDivides(this, options);
     styleDivides(this, options);
   });
+  /*
   const seekBar = this.controlBar.progressControl.seekBar;
 
-  seekBar.on('mousemove', function() {
+  seekBar.on('mousemove', function () {
     // Need to get the tooltip element and edit it to have the pose name also
     // Then done
+
+    const divides = [{ startTime: '1:47', endTime: '0:45', pose: '4' }];
     const mouseTimeDisplay = seekBar.mouseTimeDisplay;
     const tooltip = mouseTimeDisplay.timeTooltip.el_;
     const tooltipValue = tooltip.innerText;
 
-    videojs.log('Seek Position: ', parseFloat(mouseTimeDisplay.el_.style.left));
-    videojs.log('Tooltip Value: ', tooltipValue);
+    for (let i = 0; i < divides.length; i++) {
+
+      if (tooltipValue === divides[i].startTime) {
+        videojs.dom.insertContent(tooltip, divides[i].pose);
+      }
+    }
+    // const seekPos = parseFloat(mouseTimeDisplay.el_.style.left);
+    // videojs.log('Seek Position: ', seekPos);
+    // videojs.log('Tooltip Value: ', tooltipValue);
+
+  });
+  */
+  const progress = this.controlBar.progressControl;
+  /* hh:mm:ss -> seconds */
+  const convertToInt = (hms) => {
+    const split = hms.split(':');
+
+    return (+split[0]) * 60 + (+split[1]);
+  };
+
+  const exampleDivide = { startTime: 120, endTime: 150, pose: 'Pose 2' };
+
+  progress.on('mousemove', function () {
+    // const dom = videojs.dom;
+    const seekBar = progress.seekBar;
+    const mouseTimeDisplay = seekBar.mouseTimeDisplay;
+    const ttTime = mouseTimeDisplay.timeTooltip.el_.innerText;
+
+    for (let i = 0; i < options.divides.length; i++) {
+      if (convertToInt(ttTime) >= options.divides[i].startTime && convertToInt(ttTime) <= options.divides[i].endTime) {
+        videojs.log('Pose: ', options.divides[i].pose);
+      }
+    }
+    // videojs.log('Time: ', mouseTimeDisplay.timeTooltip.el_.innerText);
+    // videojs.log('Converted Time: ', convertToInt(mouseTimeDisplay.timeTooltip.el_.innerText));
   });
 };
 
