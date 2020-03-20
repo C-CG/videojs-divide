@@ -7,25 +7,16 @@ const defaults = {
   divides: []
 };
 
-// Cross-compatibility for Video.js 5 and 6.
 const registerPlugin = videojs.registerPlugin || videojs.plugin;
-// const dom = videojs.dom || videojs;
 
-/**
- * Function to invoke when the player is ready.
- *
- * This is a great place for your plugin to initialize itself. When this
- * function is called, the player will have its DOM and child components
- * in place.
- *
- * @function onPlayerReady
- * @param    {Player} player
- *           A Video.js player object.
- *
- * @param    {Object} [options={}]
- *           A plain object containing options for the plugin.
- */
+/* hh:mm:ss -> seconds */
+const convertToInt = (hms) => {
+  const split = hms.split(':');
 
+  return (+split[0]) * 60 + (+split[1]);
+};
+
+/* Divide Component */
 class Divide extends videojs.getComponent('ClickableComponent') {
   constructor(player, options) {
     super(player, options);
@@ -34,7 +25,7 @@ class Divide extends videojs.getComponent('ClickableComponent') {
     this.pose = options.pose;
   }
   handleClick() {
-    videojs.log('Divide Clicked: ', String(this.pose));
+    videojs.log('Divide Clicked: ', this.pose);
   }
   createEl() {
     return videojs.dom.createEl('div', {
@@ -73,77 +64,35 @@ const styleDivides = (player, options) => {
   }
 };
 
-const onPlayerReady = (player, options) => {
+const onPlayerReady = (player) => {
   player.addClass('vjs-divide');
 };
 
-/**
- * A video.js plugin.
- *
- * In the plugin function, the value of `this` is a video.js `Player`
- * instance. You cannot rely on the player being in a "ready" state here,
- * depending on how the plugin is invoked. This may or may not be important
- * to you; if not, remove the wait for "ready"!
- *
- * @function divide
- * @param    {Object} [options={}]
- *           An object of options left to the plugin author to define.
- */
-const divide = function (options) {
+const divide = function(options) {
   this.ready(() => {
     onPlayerReady(this, videojs.mergeOptions(defaults, options));
   });
-  this.on('playing', function () {
+  /* Runs when Player starts (player.on) */
+  this.on('playing', function() {
     renderDivides(this, options);
     styleDivides(this, options);
   });
-  /*
-  const seekBar = this.controlBar.progressControl.seekBar;
-
-  seekBar.on('mousemove', function () {
-    // Need to get the tooltip element and edit it to have the pose name also
-    // Then done
-
-    const divides = [{ startTime: '1:47', endTime: '0:45', pose: '4' }];
-    const mouseTimeDisplay = seekBar.mouseTimeDisplay;
-    const tooltip = mouseTimeDisplay.timeTooltip.el_;
-    const tooltipValue = tooltip.innerText;
-
-    for (let i = 0; i < divides.length; i++) {
-
-      if (tooltipValue === divides[i].startTime) {
-        videojs.dom.insertContent(tooltip, divides[i].pose);
-      }
-    }
-    // const seekPos = parseFloat(mouseTimeDisplay.el_.style.left);
-    // videojs.log('Seek Position: ', seekPos);
-    // videojs.log('Tooltip Value: ', tooltipValue);
-
-  });
-  */
+  /* Runs during interaction with the progressBar */
   const progress = this.controlBar.progressControl;
-  /* hh:mm:ss -> seconds */
-  const convertToInt = (hms) => {
-    const split = hms.split(':');
 
-    return (+split[0]) * 60 + (+split[1]);
-  };
-
-  const exampleDivide = { startTime: 120, endTime: 150, pose: 'Pose 2' };
-
-  progress.on('mousemove', function () {
-    // const dom = videojs.dom;
+  progress.on('mousemove', function() {
+    const dom = videojs.dom;
     const seekBar = progress.seekBar;
     const mouseTimeDisplay = seekBar.mouseTimeDisplay;
-    const ttTime = mouseTimeDisplay.timeTooltip.el_.innerText;
+    const toolTip = mouseTimeDisplay.timeTooltip.el_;
+    const ttTime = toolTip.innerText;
+    /* Looping the divides and checking for matches based on toolTip times */
 
     for (let i = 0; i < options.divides.length; i++) {
       if (convertToInt(ttTime) >= options.divides[i].startTime && convertToInt(ttTime) <= options.divides[i].endTime) {
-        videojs.log('Pose: ', options.divides[i].pose);
+        dom.insertContent(toolTip, options.divides[i].pose);
       }
     }
-    // videojs.log('Time: ', mouseTimeDisplay.timeTooltip.el_.innerText);
-    // videojs.log('Converted Time: ', convertToInt(mouseTimeDisplay.timeTooltip.el_.innerText));
   });
 };
 
